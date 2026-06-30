@@ -1,0 +1,317 @@
+# GARHY Hyper - Final Enterprise UI/UX Prompt
+
+Design and polish GARHY Hyper into an enterprise-grade AI marketplace with a premium shopping experience inspired by the usability, speed, and polish of world-class e-commerce platforms such as Noon, Amazon, and Apple, while maintaining a completely unique visual identity.
+
+## Objectives
+
+Create a production-ready interface that feels:
+- Premium
+- Modern
+- Fast
+- Elegant
+- Trustworthy
+- Enterprise-grade
+
+Never copy Noon visually.
+Only match its usability, navigation quality, responsiveness, and shopping experience.
+
+--------------------------------------------------
+
+## Design Language
+
+Create a completely unique visual identity.
+
+Style:
+
+• Premium Glassmorphism
+• Soft gradients
+• Frosted glass cards
+• Elegant shadows
+• Clean layouts
+• Minimal visual noise
+• High readability
+• Luxury SaaS appearance
+
+Color Palette:
+
+Primary:
+Deep Royal Blue
+
+Secondary:
+Premium Purple
+
+Accent:
+Electric Cyan
+
+Highlights:
+Minimal Luxury Gold
+
+Background:
+Very light gray (#F7F9FC)
+Dark mode:
+Deep navy instead of pure black.
+
+--------------------------------------------------
+
+## Homepage
+
+Redesign completely.
+
+Include:
+
+• Premium hero section
+• Smart search
+• AI recommendations
+• Categories
+• Featured collections
+• Trending products
+• Recently viewed
+• Personalized recommendations
+• Promotional banners
+• Newsletter
+• Trust indicators
+
+All sections should have generous spacing.
+
+--------------------------------------------------
+
+## Navigation
+
+Build a premium navigation system.
+
+Desktop:
+
+• Sticky header
+• Mega menu
+• Smart search
+• Wishlist
+• Cart
+• Notifications
+• User profile
+
+Mobile:
+
+• Beautiful bottom navigation
+• Floating search
+• Smooth transitions
+
+--------------------------------------------------
+
+## Product Cards
+
+Premium cards only.
+
+Requirements:
+
+• Equal height
+• Better spacing
+• Premium shadows
+• Rounded corners
+• Hover animations
+• Wishlist button
+• Rating
+• Price
+• Discount
+• Stock
+• Quick add to cart
+
+--------------------------------------------------
+
+## Product Details
+
+Create a premium experience.
+
+Include:
+
+• Large gallery
+• Zoom
+• Smooth image transitions
+• Sticky purchase section
+• Variants
+• Reviews
+• Specifications
+• Shipping info
+• Similar products
+• AI recommendations
+
+--------------------------------------------------
+
+## Shopping Cart
+
+Improve:
+
+• Better summary
+• Coupon section
+• Shipping estimation
+• Empty state
+• Upsell recommendations
+
+--------------------------------------------------
+
+## Checkout
+
+Create an enterprise checkout.
+
+Requirements:
+
+• Minimal steps
+• Progress indicator
+• Multiple payment methods
+• Validation
+• Loading states
+• Error handling
+
+--------------------------------------------------
+
+## Dashboard
+
+Polish every dashboard page.
+
+Improve:
+
+• Statistics cards
+• Tables
+• Charts
+• Filters
+• Pagination
+• Empty states
+• Loading states
+
+--------------------------------------------------
+
+## Arabic Experience
+
+Perfect RTL.
+
+Requirements:
+
+• Native typography
+• Perfect alignment
+• Proper spacing
+• RTL-aware icons
+• Native Arabic UX
+
+--------------------------------------------------
+
+## English Experience
+
+Perfect LTR.
+
+Native wording.
+
+No translation issues.
+
+--------------------------------------------------
+
+## Dark Mode
+
+Premium dark mode.
+
+Requirements:
+
+• Deep navy background
+• Glass cards
+• Elegant gradients
+• Comfortable contrast
+
+--------------------------------------------------
+
+## Light Mode
+
+Premium light mode.
+
+Requirements:
+
+• Soft whites
+• Frosted glass
+• Elegant shadows
+• Excellent readability
+
+--------------------------------------------------
+
+## Motion
+
+Animations must be:
+
+• Fast
+• Smooth
+• Professional
+
+Use subtle micro-interactions only.
+
+--------------------------------------------------
+
+## Performance
+
+Optimize everything.
+
+Requirements:
+
+• Lazy loading
+• Optimized images
+• Code splitting
+• Bundle optimization
+• Smooth scrolling
+• 60 FPS animations
+
+--------------------------------------------------
+
+## Accessibility
+
+Implement:
+
+• WCAG AA
+• Keyboard navigation
+• Focus states
+• Semantic HTML
+• ARIA labels
+
+--------------------------------------------------
+
+## Mobile First
+
+Perfect on:
+
+• Android
+• iPhone
+• Tablet
+• Desktop
+
+No overflow.
+
+No broken layouts.
+
+--------------------------------------------------
+
+## Production Audit
+
+Remove permanently:
+
+• Demo products
+• Demo images
+• Placeholder text
+• Fake reviews
+• Fake users
+• Mock statistics
+• Dummy orders
+• Sample banners
+
+Use elegant empty states until real content exists.
+
+--------------------------------------------------
+
+## Quality Control
+
+Before completion:
+
+- Run a full UI audit.
+- Run a UX audit.
+- Run accessibility checks.
+- Run responsive checks.
+- Run performance checks.
+- Verify RTL/LTR.
+- Verify dark/light themes.
+- Verify no visual inconsistencies.
+- Verify pixel-perfect alignment.
+
+Deliver only when the application reaches enterprise production quality comparable in polish and usability to leading global e-commerce platforms, while maintaining a unique GARHY brand identity.

@@ -1,0 +1,359 @@
+PHASE 2. Luxury Marketplace Experience.
+
+Act as a Senior UX Director, Principal Frontend Engineer, Enterprise E-commerce Architect, Conversion Rate Optimization Expert, Motion Designer, SEO Specialist and Performance Engineer.
+
+Transform GARHY into a premium global marketplace that feels more luxurious than Noon, Amazon, Trendyol and Alibaba while maintaining excellent performance.
+
+Do not redesign randomly.
+
+Respect the existing design system.
+
+Upgrade every component with enterprise quality.
+
+Do not generate fake products.
+
+Do not generate placeholder text.
+
+Use production-ready code only.
+
+====================================================
+
+HOME PAGE
+
+Create a premium luxury landing page.
+
+Powerful hero section.
+
+Factory-direct marketplace positioning.
+
+Elegant Arabic typography.
+
+Premium animations.
+
+Micro interactions.
+
+Smooth scrolling.
+
+Premium cards.
+
+Luxury gradients.
+
+Floating highlights.
+
+Professional spacing.
+
+Animated category sections.
+
+Featured factories.
+
+Trending products.
+
+Best selling products.
+
+Flash deals.
+
+Recommended products.
+
+Recently viewed.
+
+Continue shopping.
+
+Top brands.
+
+Global suppliers.
+
+Countries.
+
+Customer trust section.
+
+Marketplace statistics.
+
+Why GARHY.
+
+How it works.
+
+Wholesale advantages.
+
+Retail advantages.
+
+Distributor program.
+
+Factory partnerships.
+
+FAQ.
+
+Newsletter.
+
+Premium footer.
+
+====================================================
+
+PRODUCT EXPERIENCE
+
+Create one of the best product pages.
+
+Large premium gallery.
+
+Zoom.
+
+Image carousel.
+
+Video support.
+
+360 preview if available.
+
+Factory information.
+
+Country of origin.
+
+Brand.
+
+Supplier.
+
+Specifications.
+
+Certificates.
+
+Shipping information.
+
+Delivery estimation.
+
+Stock availability.
+
+Wholesale prices.
+
+Retail prices.
+
+Distributor prices.
+
+Business prices.
+
+Savings calculator.
+
+MOQ support.
+
+Related products.
+
+Frequently bought together.
+
+Recently viewed.
+
+Product comparison.
+
+Wishlist.
+
+Share.
+
+Reviews.
+
+Questions and answers.
+
+Sticky add to cart.
+
+Floating buy button on mobile.
+
+====================================================
+
+SEARCH
+
+Enterprise instant search.
+
+Typo tolerance.
+
+Arabic search.
+
+English search.
+
+Filters.
+
+Price.
+
+Brand.
+
+Country.
+
+Supplier.
+
+Factory.
+
+Rating.
+
+Availability.
+
+Wholesale only.
+
+Retail only.
+
+Sorting.
+
+Fast response.
+
+====================================================
+
+CART
+
+Luxury shopping cart.
+
+Fast updates.
+
+Sticky summary.
+
+Shipping calculator.
+
+Discount codes.
+
+Wholesale savings.
+
+Recommended products.
+
+Cross sell.
+
+Upsell.
+
+Saved for later.
+
+====================================================
+
+CHECKOUT
+
+Professional enterprise checkout.
+
+Fast.
+
+Minimal.
+
+Secure.
+
+Guest checkout.
+
+Account checkout.
+
+Address management.
+
+Shipping methods.
+
+Payment methods.
+
+Order summary.
+
+Invoice preview.
+
+Validation.
+
+Excellent mobile experience.
+
+====================================================
+
+ACCOUNT
+
+Premium dashboard.
+
+Orders.
+
+Invoices.
+
+Wishlist.
+
+Addresses.
+
+Notifications.
+
+Returns.
+
+Support tickets.
+
+Security.
+
+Language.
+
+Dark mode compatibility.
+
+====================================================
+
+ANIMATIONS
+
+Professional only.
+
+No excessive motion.
+
+Smooth transitions.
+
+Premium hover effects.
+
+Loading skeletons.
+
+Elegant page transitions.
+
+High FPS.
+
+====================================================
+
+MOBILE
+
+Perfect responsive behavior.
+
+No horizontal scrolling.
+
+Large touch targets.
+
+Excellent spacing.
+
+Fast loading.
+
+====================================================
+
+SEO
+
+Enterprise metadata.
+
+Structured data.
+
+Schema.org.
+
+Open Graph.
+
+Twitter cards.
+
+Perfect headings.
+
+====================================================
+
+PERFORMANCE
+
+Lighthouse target.
+
+Performance above 95.
+
+Accessibility above 95.
+
+SEO above 95.
+
+Best Practices above 95.
+
+Optimize rendering.
+
+Optimize images.
+
+Optimize bundle.
+
+Optimize lazy loading.
+
+Avoid layout shifts.
+
+====================================================
+
+QUALITY
+
+Run lint.
+
+Run type check.
+
+Run build.
+
+Fix all warnings.
+
+Fix all errors.
+
+Verify production build.
+
+Provide a detailed summary of completed improvements.

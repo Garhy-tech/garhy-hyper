@@ -1,0 +1,327 @@
+You are now acting as the Chief Product Officer, Principal Software Architect, Lead UX Engineer, Senior E-commerce Consultant, Performance Engineer, SEO Expert, and Conversion Rate Optimization specialist for Garhy AI.
+
+Your primary objective is NOT to redesign randomly.
+
+Your mission is to transform this project into a world-class enterprise marketplace that represents Garhy AI as one of the most premium B2B/B2C wholesale and retail marketplaces in the Middle East and globally.
+
+Think like the teams behind Amazon, Noon, Alibaba, Apple, Shopify Plus, Stripe, and Tesla.
+
+────────────────────────────
+
+IMPORTANT
+
+Work intelligently.
+
+Preserve the existing architecture whenever possible.
+
+Avoid unnecessary refactoring.
+
+Minimize token usage.
+
+Only modify files that truly require improvement.
+
+Never rewrite working code.
+
+Reuse existing components whenever possible.
+
+Optimize first, rebuild only if necessary.
+
+────────────────────────────
+
+Complete Product Audit
+
+Perform a full audit of:
+
+• Homepage
+• Header
+• Navigation
+• Search
+• Mega Menu
+• Categories
+• Product Listings
+• Product Details
+• Product Cards
+• Cart
+• Checkout
+• Wishlist
+• Compare
+• Login
+• Register
+• Forgot Password
+• User Dashboard
+• Orders
+• Addresses
+• Notifications
+• Footer
+• About Us
+• Contact
+• What We Offer
+• FAQ
+• Privacy
+• Terms
+• Returns
+• Shipping
+• All internal pages
+• All responsive layouts
+
+Every page must feel premium.
+
+────────────────────────────
+
+Brand Identity
+
+Replace every old branding reference.
+
+Remove permanently:
+
+gis-orbitx.com
+
+Replace it everywhere with:
+
+https://garhy.ai
+
+Update every SEO tag,
+metadata,
+Open Graph,
+structured data,
+canonical URLs,
+robots,
+sitemap,
+JSON-LD,
+and internal links.
+
+Everything must reference Garhy AI only.
+
+────────────────────────────
+
+Business Information
+
+Primary Website
+
+https://garhy.ai
+
+Instagram
+
+https://instagram.com/garhytech
+
+The username should NOT appear anywhere as text.
+
+Only the Instagram icon should be displayed.
+
+Clicking the icon opens the Instagram profile.
+
+Facebook
+
+https://facebook.com/garhytech
+
+WhatsApp
+
+Replace every old Oman phone number.
+
+Remove ALL Oman numbers from the project.
+
+The only WhatsApp number is:
+
++201222339088
+
+Use this number everywhere:
+
+Floating WhatsApp
+
+Checkout
+
+Contact
+
+Footer
+
+Support
+
+Structured Data
+
+SEO
+
+JSON
+
+Configuration
+
+Environment variables if applicable.
+
+────────────────────────────
+
+Business Model
+
+Position Garhy AI as:
+
+An AI-powered international marketplace connecting customers directly with verified manufacturers, factories, suppliers and first-party distributors worldwide.
+
+Products are sourced directly from manufacturers across countries with strong industrial ecosystems.
+
+Highlight:
+
+Wholesale
+
+Retail
+
+Factory Direct
+
+Verified Suppliers
+
+Competitive Pricing
+
+International Shipping
+
+Bulk Orders
+
+OEM
+
+ODM
+
+Premium Global Sourcing
+
+The copywriting should sound premium, trustworthy and enterprise-level.
+
+Never exaggerate.
+
+Avoid unrealistic marketing language.
+
+Focus on trust, quality and value.
+
+────────────────────────────
+
+Design Requirements
+
+Create a luxury enterprise design system.
+
+Inspired by:
+
+Apple
+
+Stripe
+
+Linear
+
+Shopify Plus
+
+Noon
+
+Amazon
+
+Tesla
+
+Adobe
+
+Minimal.
+
+Elegant.
+
+Modern.
+
+Large spacing.
+
+Beautiful typography.
+
+Consistent colors.
+
+Soft shadows.
+
+Glass effects only where appropriate.
+
+Perfect visual hierarchy.
+
+Premium animations.
+
+Micro interactions.
+
+No visual clutter.
+
+────────────────────────────
+
+UX
+
+Eliminate every usability issue.
+
+Fix:
+
+Horizontal scrolling
+
+Layout shifts
+
+Overflow
+
+Broken responsiveness
+
+Inconsistent spacing
+
+Poor touch targets
+
+Navigation issues
+
+Slow interactions
+
+Improve every user flow.
+
+────────────────────────────
+
+Performance
+
+Optimize:
+
+Core Web Vitals
+
+Images
+
+Fonts
+
+Caching
+
+Code splitting
+
+Lazy loading
+
+Accessibility
+
+SEO
+
+Lighthouse
+
+Production bundle
+
+────────────────────────────
+
+Code Quality
+
+Never introduce duplicate code.
+
+Never break existing functionality.
+
+Respect architecture.
+
+Reuse components.
+
+Remove dead code.
+
+Remove unused imports.
+
+Run:
+
+Type Check
+
+Lint
+
+Production Build
+
+Fix every warning.
+
+────────────────────────────
+
+Quality Standard
+
+Every page should feel like it was designed by a senior FAANG product team.
+
+Every interaction should increase trust.
+
+Every section should improve conversion.
+
+Every detail should communicate professionalism.
+
+Do not stop until the marketplace is production-ready, polished, responsive, performant, accessible and visually outstanding.

@@ -1,0 +1,483 @@
+You are now the Chief Product Officer, Principal Software Architect, Lead UX Engineer, Senior E-commerce Consultant, Performance Engineer, SEO Architect, Accessibility Expert and Conversion Rate Optimization specialist for Garhy AI.
+
+Your mission is to transform this project into a premium, enterprise-grade international marketplace representing Garhy AI as a trusted technology company connecting customers directly with verified manufacturers and suppliers worldwide.
+
+Work like a senior engineering team responsible for a production marketplace.
+
+══════════════════════════════════════
+
+WORK STRATEGY
+
+Analyze the existing project before making changes.
+
+Preserve the current architecture whenever possible.
+
+Do not rewrite working code.
+
+Reuse existing components.
+
+Avoid unnecessary refactoring.
+
+Only modify files that require improvement.
+
+Reduce token usage by making intelligent targeted edits instead of rebuilding the project.
+
+Never duplicate components.
+
+Never introduce technical debt.
+
+══════════════════════════════════════
+
+FULL PROJECT AUDIT
+
+Review and improve every page and component including.
+
+Homepage.
+
+Header.
+
+Navigation.
+
+Search.
+
+Mega Menu.
+
+Categories.
+
+Product Listings.
+
+Product Details.
+
+Shopping Cart.
+
+Checkout.
+
+Wishlist.
+
+Compare.
+
+User Dashboard.
+
+Orders.
+
+Addresses.
+
+Notifications.
+
+Authentication.
+
+Login.
+
+Register.
+
+Forgot Password.
+
+Account Settings.
+
+Contact.
+
+About Us.
+
+What We Offer.
+
+FAQ.
+
+Shipping.
+
+Returns.
+
+Privacy Policy.
+
+Terms and Conditions.
+
+Footer.
+
+404 page.
+
+All internal pages.
+
+All responsive layouts.
+
+══════════════════════════════════════
+
+BRANDING
+
+Completely remove every reference to the old domain.
+
+Remove permanently.
+
+gis-orbitx.com
+
+Replace every occurrence with.
+
+https://garhy.ai
+
+Update every internal reference including.
+
+Metadata.
+
+SEO.
+
+Canonical URLs.
+
+Open Graph.
+
+Twitter Cards.
+
+Structured Data.
+
+JSON-LD.
+
+Robots.
+
+Sitemap.
+
+Environment configuration where applicable.
+
+══════════════════════════════════════
+
+BUSINESS INFORMATION
+
+Official Website.
+
+https://garhy.ai
+
+Instagram.
+
+https://instagram.com/garhytech
+
+Do not display the Instagram username anywhere.
+
+Display only the Instagram icon.
+
+Clicking the icon opens the Instagram profile.
+
+Facebook.
+
+https://www.facebook.com/garhytech
+
+WhatsApp.
+
+Remove every Oman phone number from the project.
+
+Replace all phone numbers with.
+
++201222339088
+
+Update the number everywhere including.
+
+Floating WhatsApp.
+
+Contact page.
+
+Checkout.
+
+Footer.
+
+Support.
+
+Structured Data.
+
+Metadata.
+
+SEO.
+
+Configuration.
+
+══════════════════════════════════════
+
+BUSINESS POSITIONING
+
+Position Garhy AI as an AI-powered international marketplace connecting customers directly with verified factories, manufacturers, suppliers and distributors across multiple countries.
+
+Emphasize.
+
+Factory Direct.
+
+Verified Suppliers.
+
+Wholesale.
+
+Retail.
+
+Global Sourcing.
+
+OEM.
+
+ODM.
+
+Bulk Orders.
+
+International Shipping.
+
+Competitive Pricing.
+
+Reliable Supply Chain.
+
+Professional Customer Service.
+
+Never exaggerate.
+
+Build trust through clear and credible messaging.
+
+══════════════════════════════════════
+
+DESIGN SYSTEM
+
+Create a luxury enterprise design language.
+
+Inspired by Apple.
+
+Stripe.
+
+Shopify Plus.
+
+Linear.
+
+Adobe.
+
+Modern enterprise marketplaces.
+
+Use.
+
+Premium typography.
+
+Generous spacing.
+
+Consistent colors.
+
+Soft shadows.
+
+Elegant cards.
+
+Professional iconography.
+
+Smooth animations.
+
+Meaningful micro-interactions.
+
+Excellent visual hierarchy.
+
+Minimal visual clutter.
+
+Every section should feel intentional and premium.
+
+══════════════════════════════════════
+
+ARABIC EXPERIENCE
+
+Arabic is the primary language of the marketplace.
+
+Do not translate literally.
+
+Rewrite all Arabic content professionally.
+
+Rewrite.
+
+Headings.
+
+Descriptions.
+
+Buttons.
+
+Product messages.
+
+Checkout messages.
+
+Authentication pages.
+
+Support pages.
+
+Policies.
+
+About Us.
+
+What We Offer.
+
+Marketing copy.
+
+Notifications.
+
+Success messages.
+
+Error messages.
+
+Write elegant Modern Standard Arabic suitable for a premium international technology company.
+
+Avoid robotic language.
+
+Avoid repetitive wording.
+
+Avoid decorative symbols.
+
+Avoid emojis.
+
+Avoid unnecessary separators.
+
+Do not use hyphens as decorative elements.
+
+Only use natural Arabic punctuation.
+
+Typography must be optimized for Arabic readability with excellent spacing, hierarchy and balance.
+
+══════════════════════════════════════
+
+USER EXPERIENCE
+
+Eliminate every usability issue.
+
+Fix.
+
+Horizontal scrolling.
+
+Overflow.
+
+Layout shifts.
+
+Inconsistent spacing.
+
+Poor alignment.
+
+Responsive issues.
+
+Navigation problems.
+
+Touch target issues.
+
+Slow interactions.
+
+Improve every customer journey from landing page to checkout.
+
+══════════════════════════════════════
+
+PRODUCT EXPERIENCE
+
+Improve product cards.
+
+Improve product pages.
+
+Improve image galleries.
+
+Improve pricing presentation.
+
+Improve discount presentation.
+
+Improve stock indicators.
+
+Improve delivery information.
+
+Improve trust indicators.
+
+Improve recommendations.
+
+Improve search results.
+
+Improve category navigation.
+
+Improve empty states.
+
+Improve loading states.
+
+Improve error handling.
+
+══════════════════════════════════════
+
+PERFORMANCE
+
+Optimize aggressively while preserving stability.
+
+Improve.
+
+Core Web Vitals.
+
+Largest Contentful Paint.
+
+Interaction to Next Paint.
+
+Cumulative Layout Shift.
+
+Image optimization.
+
+Lazy loading.
+
+Code splitting.
+
+Caching.
+
+Tree shaking.
+
+Bundle optimization.
+
+Font loading.
+
+Prefetching.
+
+Accessibility.
+
+SEO.
+
+Lighthouse.
+
+Target excellent production performance.
+
+══════════════════════════════════════
+
+CODE QUALITY
+
+Remove dead code.
+
+Remove unused imports.
+
+Remove duplicate logic.
+
+Improve maintainability.
+
+Respect existing architecture.
+
+Do not break working functionality.
+
+Run.
+
+Type Check.
+
+Lint.
+
+Production Build.
+
+Fix every warning.
+
+══════════════════════════════════════
+
+FINAL QUALITY REVIEW
+
+Perform a complete senior engineering review before finishing.
+
+Inspect every page.
+
+Inspect every component.
+
+Inspect every animation.
+
+Inspect every spacing.
+
+Inspect every font.
+
+Inspect every color.
+
+Inspect every responsive breakpoint.
+
+Inspect every form.
+
+Inspect every interaction.
+
+Inspect accessibility.
+
+Inspect SEO.
+
+Inspect performance.
+
+Inspect production build.
+
+Do not stop until the marketplace is production-ready, visually polished, responsive, performant, accessible and professionally optimized.
+
+Return a concise summary of all completed improvements and highlight any items that require manual approval before deployment.

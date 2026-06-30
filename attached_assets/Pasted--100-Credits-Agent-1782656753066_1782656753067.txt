@@ -1,0 +1,247 @@
+ممتاز. سنبدأ بالطريقة الصحيحة. **لا ترسل 100 طلب مرة واحدة** حتى لا يضيع الـ Credits ويبدأ الـ Agent في التخمين.
+
+سنقسم المشروع إلى مراحل احترافية. ابدأ بالمرحلة الأولى فقط.
+
+انسخ البرومبت التالي كما هو وأرسله للـ Agent:
+
+---
+
+# PHASE 1 — ENTERPRISE FOUNDATION & REBRANDING
+
+You are the Lead Staff Software Engineer, Principal UI/UX Architect, Performance Engineer, and Enterprise E-commerce Architect for Garhy.
+
+Your objective is to transform the existing project into the premium Garhy.ai identity before implementing any new features.
+
+This phase is ONLY about branding, stability, performance and architecture.
+
+Do NOT redesign the entire store yet.
+
+Do NOT create demo products.
+
+Do NOT create placeholder content.
+
+Complete every task below before finishing.
+
+## Brand Migration
+
+Replace every occurrence of the old domain.
+
+Remove every reference to:
+
+gis-orbitx.com
+
+Replace with
+
+[https://garhy.ai](https://garhy.ai)
+
+Remove every old email.
+
+Use only the Garhy identity.
+
+Company Name
+
+Garhy
+
+Primary Domain
+
+garhy.ai
+
+Primary Brand
+
+Garhy
+
+Never mention the old company anywhere.
+
+---
+
+## Social Integration
+
+Facebook
+
+[https://facebook.com/garhytech](https://facebook.com/garhytech)
+
+Instagram
+
+[https://instagram.com/garhytech](https://instagram.com/garhytech)
+
+The Instagram username must never appear as text.
+
+Only the Instagram icon should be visible.
+
+Clicking the icon opens the Instagram page.
+
+Replace every WhatsApp number with
+
++201222339088
+
+---
+
+## Visual Identity
+
+Create a premium enterprise appearance inspired by
+
+Apple
+
+Noon
+
+Stripe
+
+Shopify Plus
+
+Alibaba
+
+Amazon
+
+The interface must feel luxurious.
+
+Minimal.
+
+Elegant.
+
+Modern.
+
+Fast.
+
+---
+
+## Arabic Experience
+
+Arabic is the primary language.
+
+RTL must be perfect.
+
+Typography must be premium.
+
+Spacing must be consistent.
+
+Buttons must feel luxurious.
+
+All Arabic copy must be professionally written.
+
+No machine-translated text.
+
+---
+
+## Performance
+
+Remove every horizontal scroll.
+
+Fix every overflow.
+
+Prevent layout shifts.
+
+Remove UI flickering.
+
+Prevent content jumping.
+
+Optimize rendering.
+
+Optimize animations.
+
+Improve loading speed.
+
+Lazy load heavy assets.
+
+Optimize fonts.
+
+Optimize images.
+
+Reduce unnecessary JavaScript.
+
+Remove unused CSS.
+
+Improve Lighthouse score.
+
+Target
+
+Performance above 95
+
+Accessibility above 95
+
+Best Practices above 95
+
+SEO above 95
+
+---
+
+## Mobile Experience
+
+Perfect responsive behavior.
+
+No element may overflow.
+
+No button may move unexpectedly.
+
+No section may resize incorrectly.
+
+Touch interactions must feel native.
+
+---
+
+## Accessibility
+
+Keyboard navigation.
+
+Visible focus.
+
+Proper labels.
+
+ARIA.
+
+Semantic HTML.
+
+Color contrast.
+
+---
+
+## Cleanup
+
+Remove every unused component.
+
+Remove dead code.
+
+Remove duplicate styles.
+
+Remove obsolete assets.
+
+Remove old branding.
+
+Remove development leftovers.
+
+---
+
+## Quality Control
+
+Run
+
+Type Check
+
+Lint
+
+Build
+
+Production Build
+
+Fix every warning.
+
+Fix every error.
+
+Fix every accessibility issue.
+
+Fix every responsive issue.
+
+Fix every overflow.
+
+Fix every console warning.
+
+Do not stop until everything passes.
+
+Finally produce a clean commit ready for the next development phase.
+
+---
+
+## بعد انتهاء هذه المرحلة
+
+لا تبدأ المرحلة الثانية مباشرة.
+
+أرسل لي النتيجة أو أخبرني أنها انتهت، وسأجهز لك المرحلة الثانية الخاصة بالواجهة الرئيسية، الأقسام، البانرات، والمنتجات بطريقة احترافية مع أقل استهلاك ممكن للـ Credits.

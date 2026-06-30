@@ -1,0 +1,228 @@
+PHASE 1. Enterprise Foundation.
+
+Act as a Principal Software Engineer, Enterprise E-commerce Architect, UX Director, SEO Expert, Performance Engineer, Marketplace Architect, and Senior Arabic Copywriter.
+
+Your mission is to transform the current project into a world-class enterprise marketplace without breaking existing functionality.
+
+Important rules.
+
+Do not generate demo content.
+
+Do not create fake products.
+
+Do not use placeholder text.
+
+Do not remove working features.
+
+Do not reduce performance.
+
+Preserve backward compatibility.
+
+Improve everything while keeping the project stable.
+
+====================================================
+
+BRANDING
+
+Replace every occurrence of the old brand and domain.
+
+Old domain.
+gis-orbitx.com
+
+New domain.
+garhy.ai
+
+Company name.
+GARHY
+
+Brand style.
+Modern.
+Premium.
+Minimal.
+Luxury.
+Enterprise.
+
+Remove every reference to GIS OrbitX from every page, footer, metadata, SEO tags, configuration, emails, comments and branding.
+
+====================================================
+
+CONTACT INFORMATION
+
+Primary domain.
+https://garhy.ai
+
+Facebook.
+https://facebook.com/garhytech
+
+Instagram.
+https://instagram.com/garhytech
+
+Display Instagram only as an icon.
+Do not display the username anywhere.
+
+WhatsApp.
++201222339088
+
+Replace every old Oman phone number everywhere in the project.
+
+====================================================
+
+LANGUAGE
+
+Arabic must become the default language.
+
+Arabic must be native quality.
+
+Professional retail language.
+
+Elegant typography.
+
+RTL everywhere.
+
+English remains available from the language switcher.
+
+Remember visitor language preference.
+
+Never flash between languages.
+
+====================================================
+
+VISUAL QUALITY
+
+Target premium quality comparable with the world's best marketplaces.
+
+Elegant spacing.
+
+Perfect alignment.
+
+Premium typography.
+
+Smooth animations.
+
+Beautiful hover effects.
+
+Professional shadows.
+
+Rounded components.
+
+Luxury gradients.
+
+Glass effects only where appropriate.
+
+Excellent accessibility.
+
+Consistent design system.
+
+====================================================
+
+PERFORMANCE
+
+Target Lighthouse.
+
+Performance above 95.
+
+Accessibility above 95.
+
+Best Practices above 95.
+
+SEO above 95.
+
+Optimize bundle.
+
+Optimize rendering.
+
+Optimize lazy loading.
+
+Optimize images.
+
+Optimize fonts.
+
+Optimize hydration.
+
+Avoid layout shifts.
+
+Avoid unnecessary re-renders.
+
+====================================================
+
+SEO
+
+Enterprise metadata.
+
+Structured data.
+
+Rich snippets.
+
+Arabic SEO.
+
+English SEO.
+
+Canonical URLs.
+
+Open Graph.
+
+Twitter cards.
+
+Perfect sitemap.
+
+Robots configuration.
+
+====================================================
+
+RESPONSIVE
+
+Perfect experience on.
+
+Mobile.
+
+Tablet.
+
+Laptop.
+
+Desktop.
+
+Ultra wide screens.
+
+No horizontal scrolling anywhere.
+
+====================================================
+
+COPYWRITING
+
+Rewrite all Arabic marketing content professionally.
+
+Use elegant business language.
+
+No emojis inside marketing paragraphs.
+
+No symbols.
+
+No decorative separators.
+
+Short persuasive headlines.
+
+High trust.
+
+Luxury tone.
+
+Enterprise identity.
+
+====================================================
+
+QUALITY
+
+Run lint.
+
+Run type check.
+
+Run build.
+
+Fix every warning.
+
+Fix every error.
+
+Verify production build.
+
+Do not finish until everything passes successfully.
+
+Provide a final summary of every completed improvement.

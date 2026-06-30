@@ -1,0 +1,5 @@
+# project_id is the authoritative live Supabase project ref that the running app
+# reads/writes (matches the ref in the SUPABASE_URL / VITE_SUPABASE_URL secrets
+# and the postgres.<ref> pooler username in .env.local's POSTGRES_URL).
+# Use this ref for Supabase CLI `link` / `db push`.
+project_id = "schysxhvoqsjtscfktwn"
