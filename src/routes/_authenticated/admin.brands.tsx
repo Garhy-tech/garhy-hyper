@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Star, Plus, Pencil, Trash2, Loader2 } from "lucide-react";
 import { PageHeader } from "@/components/common/page-header";
@@ -18,7 +18,7 @@ import {
 } from "@/lib/api/admin.functions";
 
 export const Route = createFileRoute("/_authenticated/admin/brands")({
-  head: () => ({ meta: [{ title: "Admin — Brands — GARHY | HYPER" }] }),
+  head: () => ({ meta: [{ title: "Admin â€” Brands â€” GARHY | HYPER" }] }),
   loader: () => listAdminBrands(),
   component: RouteComponent,
 });
@@ -189,7 +189,7 @@ function RouteComponent() {
               label={t("admin.crud.logoUrl")}
               value={form.logo_url}
               onChange={(v) => setForm((f) => ({ ...f, logo_url: v }))}
-              placeholder="https://…"
+              placeholder="https://â€¦"
             />
             <TextField
               id="b-order"
@@ -220,3 +220,4 @@ function RouteComponent() {
     </div>
   );
 }
+

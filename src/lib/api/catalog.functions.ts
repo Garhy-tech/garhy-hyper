@@ -1,4 +1,4 @@
-import { createServerFn } from "@tanstack/react-start";
+﻿import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import type { Product } from "@/contexts/commerce-context";
 
@@ -63,7 +63,7 @@ export type HomePageData = {
    MAP HELPER
 ============================================================ */
 
-/** Map a CatalogProduct row → Product shape used by commerce context + ProductCard */
+/** Map a CatalogProduct row â†’ Product shape used by commerce context + ProductCard */
 export function toProduct(p: CatalogProduct, lang: string): Product {
   const l = lang === "en" ? "en" : "ar";
   return {
@@ -85,7 +85,7 @@ export function toProduct(p: CatalogProduct, lang: string): Product {
 
 /* ============================================================
    SUPABASE REST CLIENT (no WebSocket / no Realtime)
-   Uses direct fetch against PostgREST — safe in Node.js 20 SSR.
+   Uses direct fetch against PostgREST â€” safe in Node.js 20 SSR.
 ============================================================ */
 
 const PRODUCT_SELECT =
@@ -101,7 +101,7 @@ function getSupabaseConfig() {
 async function pgrest<T>(table: string, params: Record<string, string>): Promise<T[]> {
   const { url, key } = getSupabaseConfig();
   if (!url || !key) {
-    console.warn("[catalog] Supabase env vars not set — returning empty array for", table);
+    console.warn("[catalog] Supabase env vars not set â€” returning empty array for", table);
     return [];
   }
 
@@ -147,7 +147,7 @@ async function pgrestList<T>(
 ): Promise<{ rows: T[]; total: number }> {
   const { url, key } = getSupabaseConfig();
   if (!url || !key) {
-    console.warn("[catalog] Supabase env vars not set — returning empty list for", table);
+    console.warn("[catalog] Supabase env vars not set â€” returning empty list for", table);
     return { rows: [], total: 0 };
   }
 
@@ -294,3 +294,4 @@ export const getNavCategories = createServerFn({ method: "GET" }).handler(
     });
   },
 );
+

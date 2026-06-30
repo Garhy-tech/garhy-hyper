@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, ShoppingBag, Trash2 } from "lucide-react";
 import { SiteHeader } from "@/components/layout/site-header";
@@ -9,7 +9,7 @@ import { useCart, useCountry, useWishlist } from "@/contexts/commerce-context";
 import { useLanguage } from "@/hooks/use-language";
 
 export const Route = createFileRoute("/wishlist")({
-  head: () => ({ meta: [{ title: "Wishlist — GARHY | HYPER" }] }),
+  head: () => ({ meta: [{ title: "Wishlist â€” GARHY | HYPER" }] }),
   component: WishlistPage,
 });
 
@@ -25,17 +25,17 @@ function WishlistPage() {
       <main className="flex-1 bg-surface/40">
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <PageHeader
-            title={lang === "ar" ? "المفضلة" : "Wishlist"}
-            description={`${wish.count} ${lang === "ar" ? "منتج محفوظ" : "saved items"}`}
+            title={lang === "ar" ? "ط§ظ„ظ…ظپط¶ظ„ط©" : "Wishlist"}
+            description={`${wish.count} ${lang === "ar" ? "ظ…ظ†طھط¬ ظ…ط­ظپظˆط¸" : "saved items"}`}
           />
 
           {wish.count === 0 ? (
             <EmptyState
               icon={<Heart className="h-6 w-6" />}
-              title={lang === "ar" ? "لا توجد منتجات محفوظة" : "No saved items"}
+              title={lang === "ar" ? "ظ„ط§ طھظˆط¬ط¯ ظ…ظ†طھط¬ط§طھ ظ…ط­ظپظˆط¸ط©" : "No saved items"}
               description={
                 lang === "ar"
-                  ? "اضغط على القلب لحفظ منتجاتك المفضلة"
+                  ? "ط§ط¶ط؛ط· ط¹ظ„ظ‰ ط§ظ„ظ‚ظ„ط¨ ظ„ط­ظپط¸ ظ…ظ†طھط¬ط§طھظƒ ط§ظ„ظ…ظپط¶ظ„ط©"
                   : "Tap the heart on any product to save it here"
               }
               action={
@@ -43,7 +43,7 @@ function WishlistPage() {
                   to="/catalog"
                   className="inline-flex h-11 items-center rounded-full bg-foreground px-6 text-sm font-semibold text-background transition-transform hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
-                  {lang === "ar" ? "تصفح المتجر" : "Browse the shop"}
+                  {lang === "ar" ? "طھطµظپط­ ط§ظ„ظ…طھط¬ط±" : "Browse the shop"}
                 </Link>
               }
             />
@@ -90,7 +90,7 @@ function WishlistPage() {
                           className="inline-flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full bg-foreground text-xs font-semibold text-background transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                         >
                           <ShoppingBag className="h-3.5 w-3.5" />
-                          {lang === "ar" ? "أضف" : "Add"}
+                          {lang === "ar" ? "ط£ط¶ظپ" : "Add"}
                         </button>
                         <button
                           type="button"
@@ -113,3 +113,4 @@ function WishlistPage() {
     </div>
   );
 }
+

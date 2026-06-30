@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useCart } from "@/contexts/commerce-context";
@@ -50,3 +50,4 @@ export function FlyToCart() {
     </div>
   );
 }
+

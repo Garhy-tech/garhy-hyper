@@ -1,7 +1,7 @@
-import { MessageCircle } from "lucide-react";
+﻿import { MessageCircle } from "lucide-react";
 
-const PHONE = "96801222339088";
-const MESSAGE = "مرحبًا، أرغب في الاستفسار عن المنتجات والخدمات المتاحة.";
+const PHONE = "2201222339088";
+const MESSAGE = "ظ…ط±ط­ط¨ظ‹ط§طŒ ط£ط±ط؛ط¨ ظپظٹ ط§ظ„ط§ط³طھظپط³ط§ط± ط¹ظ† ط§ظ„ظ…ظ†طھط¬ط§طھ ظˆط§ظ„ط®ط¯ظ…ط§طھ ط§ظ„ظ…طھط§ط­ط©.";
 
 export function WhatsAppFloat() {
   const href = `https://wa.me/${PHONE}?text=${encodeURIComponent(MESSAGE)}`;
@@ -17,7 +17,8 @@ export function WhatsAppFloat() {
         <span className="absolute inset-0 animate-ping rounded-full bg-white/40" />
         <MessageCircle className="relative h-5 w-5" />
       </span>
-      <span className="hidden text-sm font-semibold sm:inline">واتساب</span>
+      <span className="hidden text-sm font-semibold sm:inline">ظˆط§طھط³ط§ط¨</span>
     </a>
   );
 }
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { AnimatePresence, motion } from "framer-motion";
 import { Heart, ShoppingBag, Star, Truck, X, Zap } from "lucide-react";
 import { useEffect, useRef } from "react";
@@ -90,7 +90,7 @@ export function QuickViewModal({ product, onClose }: { product: Product; onClose
                 <span className="font-semibold text-foreground">{product.rating?.toFixed(1)}</span>
                 {product.reviews ? (
                   <span>
-                    · {product.reviews.toLocaleString()} {lang === "ar" ? "تقييم" : "reviews"}
+                    آ· {product.reviews.toLocaleString()} {lang === "ar" ? "طھظ‚ظٹظٹظ…" : "reviews"}
                   </span>
                 ) : null}
               </div>
@@ -109,13 +109,13 @@ export function QuickViewModal({ product, onClose }: { product: Product; onClose
               {product.freeShipping && (
                 <span className="inline-flex items-center gap-1 rounded-md bg-brand-soft px-2 py-1 text-[11px] font-semibold text-brand">
                   <Truck className="h-3 w-3" />
-                  {lang === "ar" ? "شحن مجاني" : "Free shipping"}
+                  {lang === "ar" ? "ط´ط­ظ† ظ…ط¬ط§ظ†ظٹ" : "Free shipping"}
                 </span>
               )}
               {product.fastDelivery && (
                 <span className="inline-flex items-center gap-1 rounded-md bg-conversion/10 px-2 py-1 text-[11px] font-semibold text-conversion">
                   <Zap className="h-3 w-3" />
-                  {lang === "ar" ? "توصيل سريع" : "Fast delivery"}
+                  {lang === "ar" ? "طھظˆطµظٹظ„ ط³ط±ظٹط¹" : "Fast delivery"}
                 </span>
               )}
             </div>
@@ -128,7 +128,7 @@ export function QuickViewModal({ product, onClose }: { product: Product; onClose
                 className="inline-flex h-11 flex-1 items-center justify-center gap-2 rounded-full bg-foreground text-sm font-semibold text-background transition-transform hover:scale-[1.02]"
               >
                 <ShoppingBag className="h-4 w-4" />
-                {lang === "ar" ? "أضف إلى السلة" : "Add to cart"}
+                {lang === "ar" ? "ط£ط¶ظپ ط¥ظ„ظ‰ ط§ظ„ط³ظ„ط©" : "Add to cart"}
               </button>
               <button
                 type="button"
@@ -150,3 +150,4 @@ export function QuickViewModal({ product, onClose }: { product: Product; onClose
     </AnimatePresence>
   );
 }
+

@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { PackageOpen, SlidersHorizontal } from "lucide-react";
 import { PageHeader } from "@/components/common/page-header";
 import { EmptyState } from "@/components/common/empty-state";
@@ -8,7 +8,7 @@ import { useLanguage } from "@/hooks/use-language";
 export const Route = createFileRoute("/catalog/")({
   head: () => ({
     meta: [
-      { title: "Shop — GARHY | HYPER" },
+      { title: "Shop â€” GARHY | HYPER" },
       { name: "description", content: "Browse our curated luxury catalog." },
     ],
   }),
@@ -58,3 +58,4 @@ function FilterGroup({ label }: { label: string }) {
     </div>
   );
 }
+

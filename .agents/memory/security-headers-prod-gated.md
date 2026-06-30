@@ -1,6 +1,6 @@
----
+﻿---
 name: Security headers are production-gated
-description: CSP/HSTS/X-Frame-Options only emit when NODE_ENV=production on the BUILT server — absent in the dev preview; how to verify them.
+description: CSP/HSTS/X-Frame-Options only emit when NODE_ENV=production on the BUILT server â€” absent in the dev preview; how to verify them.
 ---
 
 # Security headers are production-gated
@@ -17,8 +17,9 @@ groups:
 so they are intentionally skipped in dev. Their absence in the dev preview is
 NOT a bug.
 
-**How to verify (QA):** build, then run the standalone server and curl it —
+**How to verify (QA):** build, then run the standalone server and curl it â€”
 `NODE_ENV=production PORT=<p> node .output/server/index.mjs` then
 `curl -sI http://localhost:<p>/`. Do not expect CSP/HSTS in `vite dev` on :5000.
 Headers are applied at two boundaries: `src/start.ts` (normal pipeline) and
 `src/server.ts` (catastrophic SSR fallback).
+

@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { PageHeader } from "@/components/common/page-header";
@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/hooks/use-language";
 
 export const Route = createFileRoute("/_authenticated/account/profile")({
-  head: () => ({ meta: [{ title: "Profile — GARHY | HYPER" }] }),
+  head: () => ({ meta: [{ title: "Profile â€” GARHY | HYPER" }] }),
   component: ProfilePage,
 });
 
@@ -52,3 +52,4 @@ function ProfilePage() {
     </div>
   );
 }
+

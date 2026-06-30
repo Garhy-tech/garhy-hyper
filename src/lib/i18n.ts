@@ -1,4 +1,4 @@
-import i18n from "i18next";
+﻿import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { ar } from "./locales/ar";
@@ -33,3 +33,4 @@ if (!i18n.isInitialized) {
 export default i18n;
 export const RTL_LANGS = ["ar"];
 export const isRTL = (lng: string) => RTL_LANGS.includes(lng);
+

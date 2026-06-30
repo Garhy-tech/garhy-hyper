@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+﻿import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { Search, X, Clock, Sparkles, LayoutGrid, Mic } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -90,7 +90,7 @@ export function SearchOverlay({ open, onClose }: { open: boolean; onClose: () =>
     if (!SR) {
       toast.info(
         lang === "ar"
-          ? "البحث الصوتي غير مدعوم في هذا المتصفح"
+          ? "ط§ظ„ط¨ط­ط« ط§ظ„طµظˆطھظٹ ط؛ظٹط± ظ…ط¯ط¹ظˆظ… ظپظٹ ظ‡ط°ط§ ط§ظ„ظ…طھطµظپط­"
           : "Voice search not supported in this browser",
       );
       return;
@@ -116,9 +116,9 @@ export function SearchOverlay({ open, onClose }: { open: boolean; onClose: () =>
 
   const suggestions = query
     ? [
-        `${query} — ${lang === "ar" ? "أفضل العروض" : "best deals"}`,
-        `${query} — ${lang === "ar" ? "الأكثر مبيعاً" : "best sellers"}`,
-        `${query} — ${lang === "ar" ? "وصل حديثاً" : "new arrivals"}`,
+        `${query} â€” ${lang === "ar" ? "ط£ظپط¶ظ„ ط§ظ„ط¹ط±ظˆط¶" : "best deals"}`,
+        `${query} â€” ${lang === "ar" ? "ط§ظ„ط£ظƒط«ط± ظ…ط¨ظٹط¹ط§ظ‹" : "best sellers"}`,
+        `${query} â€” ${lang === "ar" ? "ظˆطµظ„ ط­ط¯ظٹط«ط§ظ‹" : "new arrivals"}`,
       ]
     : [];
 
@@ -207,11 +207,11 @@ export function SearchOverlay({ open, onClose }: { open: boolean; onClose: () =>
                     <Search className="h-6 w-6" />
                   </motion.div>
                   <p className="mt-3 font-display text-base font-bold">
-                    {lang === "ar" ? "ابدأ البحث" : "Start searching"}
+                    {lang === "ar" ? "ط§ط¨ط¯ط£ ط§ظ„ط¨ط­ط«" : "Start searching"}
                   </p>
                   <p className="mt-1 max-w-xs text-xs text-muted-foreground">
                     {lang === "ar"
-                      ? "اكتب اسم المنتج الذي تبحث عنه."
+                      ? "ط§ظƒطھط¨ ط§ط³ظ… ط§ظ„ظ…ظ†طھط¬ ط§ظ„ط°ظٹ طھط¨ط­ط« ط¹ظ†ظ‡."
                       : "Type the name of a product you're looking for."}
                   </p>
                 </div>
@@ -219,7 +219,7 @@ export function SearchOverlay({ open, onClose }: { open: boolean; onClose: () =>
 
               {recent.length > 0 && (
                 <Section
-                  title={lang === "ar" ? "عمليات بحث سابقة" : "Recent searches"}
+                  title={lang === "ar" ? "ط¹ظ…ظ„ظٹط§طھ ط¨ط­ط« ط³ط§ط¨ظ‚ط©" : "Recent searches"}
                   icon={Clock}
                 >
                   <Chips items={recent} onPick={commit} />
@@ -227,7 +227,7 @@ export function SearchOverlay({ open, onClose }: { open: boolean; onClose: () =>
               )}
 
               {query && (
-                <Section title={lang === "ar" ? "اقتراحات" : "Suggestions"} icon={Sparkles}>
+                <Section title={lang === "ar" ? "ط§ظ‚طھط±ط§ط­ط§طھ" : "Suggestions"} icon={Sparkles}>
                   <ul className="space-y-1.5 text-sm">
                     {suggestions.map((s) => (
                       <li key={s}>
@@ -246,7 +246,7 @@ export function SearchOverlay({ open, onClose }: { open: boolean; onClose: () =>
 
               {categories.length > 0 && (
                 <Section
-                  title={lang === "ar" ? "أقسام مقترحة" : "Suggested categories"}
+                  title={lang === "ar" ? "ط£ظ‚ط³ط§ظ… ظ…ظ‚طھط±ط­ط©" : "Suggested categories"}
                   icon={LayoutGrid}
                 >
                   <div className="flex flex-wrap gap-1.5">
@@ -294,7 +294,7 @@ function Section({
 }
 
 function Chips({ items, onPick }: { items: string[]; onPick: (s: string) => void }) {
-  if (items.length === 0) return <p className="text-xs text-muted-foreground">—</p>;
+  if (items.length === 0) return <p className="text-xs text-muted-foreground">â€”</p>;
   return (
     <div className="flex flex-wrap gap-1.5">
       {items.map((s) => (
@@ -309,3 +309,4 @@ function Chips({ items, onPick }: { items: string[]; onPick: (s: string) => void
     </div>
   );
 }
+

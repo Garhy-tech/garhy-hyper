@@ -1,4 +1,4 @@
-import process from "node:process";
+﻿import process from "node:process";
 
 /**
  * Server-only privileged Supabase access for admin write operations.
@@ -10,7 +10,7 @@ import process from "node:process";
  *
  * We talk to PostgREST over plain fetch (no @supabase/supabase-js client) to
  * avoid the realtime/WebSocket initialisation that throws under Node.js 20 SSR
- * — the same approach used by the read-only catalog layer.
+ * â€” the same approach used by the read-only catalog layer.
  */
 
 function getServiceConfig() {
@@ -112,3 +112,4 @@ export async function userHasAdminRole(userId: string): Promise<boolean> {
   });
   return rows.length > 0;
 }
+

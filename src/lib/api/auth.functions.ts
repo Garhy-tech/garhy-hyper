@@ -1,4 +1,4 @@
-import { createServerFn } from "@tanstack/react-start";
+﻿import { createServerFn } from "@tanstack/react-start";
 
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import { requireAdmin } from "@/integrations/supabase/admin-guard";
@@ -26,3 +26,4 @@ export const verifyAdmin = createServerFn({ method: "GET" })
   .handler(async () => {
     return { ok: true as const };
   });
+

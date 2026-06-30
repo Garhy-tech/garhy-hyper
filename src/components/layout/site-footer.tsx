@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+﻿import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Linkedin, Mail, MessageCircle, Phone, Twitter } from "lucide-react";
 import { Logo } from "@/components/common/logo";
 import { useLanguage } from "@/hooks/use-language";
@@ -45,14 +45,14 @@ export function SiteFooter() {
               <Mail className="h-4 w-4 text-brand" /> owner@garhy.ai
             </a>
             <a
-              href="tel:+96801222339088"
+              href="tel:+2201222339088"
               className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
               dir="ltr"
             >
               <Phone className="h-4 w-4 text-brand" /> +968 76 454 193
             </a>
             <a
-              href="https://wa.me/96801222339088"
+              href="https://wa.me/2201222339088"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
@@ -100,7 +100,7 @@ export function SiteFooter() {
       <div className="border-t border-hairline">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-muted-foreground sm:flex-row sm:px-6 lg:px-8">
           <span suppressHydrationWarning>
-            © {year} GARHY | HYPER. {t("footer.rights")}.
+            آ© {year} GARHY | HYPER. {t("footer.rights")}.
           </span>
           <span>Powered by GIS OrbitX</span>
         </div>
@@ -127,3 +127,4 @@ function FooterLink({ to, children }: { to: string; children: React.ReactNode })
     </Link>
   );
 }
+

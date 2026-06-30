@@ -1,4 +1,4 @@
-/**
+﻿/**
  * TanStack Start server-side Supabase client using @supabase/ssr.
  *
  * Usage inside createServerFn handlers or server middleware:
@@ -63,3 +63,4 @@ export function createSupabaseServerClient(request: Request) {
 
   return { supabase, cookiesToSet: pendingCookies };
 }
+

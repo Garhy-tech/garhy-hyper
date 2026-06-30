@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Tag, Plus, Pencil, Trash2, Loader2 } from "lucide-react";
 import { PageHeader } from "@/components/common/page-header";
@@ -18,7 +18,7 @@ import {
 } from "@/lib/api/admin.functions";
 
 export const Route = createFileRoute("/_authenticated/admin/categories")({
-  head: () => ({ meta: [{ title: "Admin — Categories — GARHY | HYPER" }] }),
+  head: () => ({ meta: [{ title: "Admin â€” Categories â€” GARHY | HYPER" }] }),
   loader: () => listAdminCategories(),
   component: RouteComponent,
 });
@@ -221,3 +221,4 @@ function RouteComponent() {
     </div>
   );
 }
+

@@ -1,4 +1,4 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+﻿import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
   Link,
@@ -21,14 +21,14 @@ function NotFoundComponent() {
         <p className="text-xs font-medium uppercase tracking-[0.3em] text-gold">404</p>
         <h1 className="mt-4 font-display text-4xl font-semibold">Page not found</h1>
         <p className="mt-3 text-sm text-muted-foreground">
-          هذه الصفحة غير موجودة. The page you're looking for doesn't exist.
+          ظ‡ط°ظ‡ ط§ظ„طµظپط­ط© ط؛ظٹط± ظ…ظˆط¬ظˆط¯ط©. The page you're looking for doesn't exist.
         </p>
         <div className="mt-6">
           <Link
             to="/"
             className="inline-flex items-center justify-center rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:opacity-90"
           >
-            Home / الرئيسية
+            Home / ط§ظ„ط±ط¦ظٹط³ظٹط©
           </Link>
         </div>
       </div>
@@ -69,23 +69,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "GARHY | HYPER | كل ما تحتاجه في وجهة تسوق واحدة" },
+      { title: "GARHY | HYPER | ظƒظ„ ظ…ط§ طھط­طھط§ط¬ظ‡ ظپظٹ ظˆط¬ظ‡ط© طھط³ظˆظ‚ ظˆط§ط­ط¯ط©" },
       {
         name: "description",
-        content: "اكتشف منتجات أصلية مختارة مع شحن سريع ودفع آمن ودعم احترافي.",
+        content: "ط§ظƒطھط´ظپ ظ…ظ†طھط¬ط§طھ ط£طµظ„ظٹط© ظ…ط®طھط§ط±ط© ظ…ط¹ ط´ط­ظ† ط³ط±ظٹط¹ ظˆط¯ظپط¹ ط¢ظ…ظ† ظˆط¯ط¹ظ… ط§ط­طھط±ط§ظپظٹ.",
       },
-      { property: "og:title", content: "GARHY | HYPER | كل ما تحتاجه في وجهة تسوق واحدة" },
+      { property: "og:title", content: "GARHY | HYPER | ظƒظ„ ظ…ط§ طھط­طھط§ط¬ظ‡ ظپظٹ ظˆط¬ظ‡ط© طھط³ظˆظ‚ ظˆط§ط­ط¯ط©" },
       {
         property: "og:description",
-        content: "اكتشف منتجات أصلية مختارة مع شحن سريع ودفع آمن ودعم احترافي.",
+        content: "ط§ظƒطھط´ظپ ظ…ظ†طھط¬ط§طھ ط£طµظ„ظٹط© ظ…ط®طھط§ط±ط© ظ…ط¹ ط´ط­ظ† ط³ط±ظٹط¹ ظˆط¯ظپط¹ ط¢ظ…ظ† ظˆط¯ط¹ظ… ط§ط­طھط±ط§ظپظٹ.",
       },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "GARHY | HYPER" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "GARHY | HYPER | كل ما تحتاجه في وجهة تسوق واحدة" },
+      { name: "twitter:title", content: "GARHY | HYPER | ظƒظ„ ظ…ط§ طھط­طھط§ط¬ظ‡ ظپظٹ ظˆط¬ظ‡ط© طھط³ظˆظ‚ ظˆط§ط­ط¯ط©" },
       {
         name: "twitter:description",
-        content: "اكتشف منتجات أصلية مختارة مع شحن سريع ودفع آمن ودعم احترافي.",
+        content: "ط§ظƒطھط´ظپ ظ…ظ†طھط¬ط§طھ ط£طµظ„ظٹط© ظ…ط®طھط§ط±ط© ظ…ط¹ ط´ط­ظ† ط³ط±ظٹط¹ ظˆط¯ظپط¹ ط¢ظ…ظ† ظˆط¯ط¹ظ… ط§ط­طھط±ط§ظپظٹ.",
       },
     ],
     links: [
@@ -133,3 +133,4 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
+

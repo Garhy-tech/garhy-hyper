@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { useRouter } from "@tanstack/react-router";
 import { toast } from "sonner";
 import { useLanguage } from "@/hooks/use-language";
@@ -31,3 +31,4 @@ export function useAdminCrud() {
 
   return { busy, run };
 }
+

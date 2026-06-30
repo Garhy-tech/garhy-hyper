@@ -1,4 +1,4 @@
-export const en = {
+﻿export const en = {
   brand: {
     name: "GARHY | HYPER",
     tagline: "Your luxury destination for global commerce",
@@ -18,7 +18,7 @@ export const en = {
     signOut: "Sign out",
   },
   header: {
-    announcement: "Fast shipping on every order • 100% authentic • Secure payment",
+    announcement: "Fast shipping on every order â€¢ 100% authentic â€¢ Secure payment",
     searchPlaceholder: "Search products, brands and categories...",
     deliverTo: "Shipping across the GCC",
   },
@@ -27,7 +27,7 @@ export const en = {
     theme: "Theme",
     light: "Light",
     dark: "Dark",
-    arabic: "العربية",
+    arabic: "ط§ظ„ط¹ط±ط¨ظٹط©",
     english: "English",
     save: "Save",
     cancel: "Cancel",
@@ -74,7 +74,7 @@ export const en = {
     brandsSub: "We partner with authentic, trusted brands.",
     finalTitle: "A global shopping experience starts here",
     finalDesc:
-      "Trusted products, competitive prices, fast shipping, and premium service — all in one platform designed for confidence.",
+      "Trusted products, competitive prices, fast shipping, and premium service â€” all in one platform designed for confidence.",
     finalCtaPrimary: "Shop now",
     finalCtaSecondary: "Create account",
   },
@@ -168,7 +168,7 @@ export const en = {
       updated: "Saved successfully",
       deleted: "Deleted successfully",
       saveError: "Could not save changes",
-      emptyHint: "Nothing here yet — use the button above to add your first entry.",
+      emptyHint: "Nothing here yet â€” use the button above to add your first entry.",
       actions: "Actions",
       status: "Status",
       active: "Active",
@@ -179,7 +179,7 @@ export const en = {
       nameEn: "Name (English)",
       nameAr: "Name (Arabic)",
       logoUrl: "Logo URL",
-      none: "— None —",
+      none: "â€” None â€”",
       product: "Product",
       price: "Price",
       compareAt: "Compare-at price",
@@ -237,7 +237,7 @@ export const en = {
     trending: "Trending now",
     trendingSub: "Curated picks for this week.",
     newArrivals: "New arrivals",
-    newArrivalsSub: "The freshest additions to our store — discover them first.",
+    newArrivalsSub: "The freshest additions to our store â€” discover them first.",
   },
   newsletter: {
     eyebrow: "Newsletter",
@@ -249,10 +249,11 @@ export const en = {
   },
   marquee: {
     m1: "Free express shipping across the GCC on orders over 50 OMR",
-    m2: "A curated marketplace — new products added regularly",
+    m2: "A curated marketplace â€” new products added regularly",
     m3: "100% authentic products from global brands",
-    m4: "Secure payments • Cash on delivery available",
+    m4: "Secure payments â€¢ Cash on delivery available",
     m5: "Now shipping to 15 countries worldwide",
     m6: "24/7 customer support in Arabic and English",
   },
 };
+

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { isRTL } from "@/lib/i18n";
 
@@ -20,3 +20,4 @@ export function useLanguage() {
 
   return { lang, dir, t, toggle, setLang: i18n.changeLanguage.bind(i18n) };
 }
+

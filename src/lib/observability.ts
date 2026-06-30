@@ -1,7 +1,7 @@
-// Lightweight structured logging + request correlation for the server
+﻿// Lightweight structured logging + request correlation for the server
 // boundaries (request middleware, Nitro fetch entry, auth/rate-limit guards).
 // Output is single-line JSON so it is greppable in deployment logs. Kept
-// dependency-free and additive — existing console.error sites are untouched.
+// dependency-free and additive â€” existing console.error sites are untouched.
 
 export type LogLevel = "info" | "warn" | "error";
 
@@ -60,3 +60,4 @@ export function logWarn(message: string, context?: LogContext): void {
 export function logError(message: string, context?: LogContext): void {
   emit("error", message, context);
 }
+

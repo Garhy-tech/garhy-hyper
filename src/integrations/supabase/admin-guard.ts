@@ -1,4 +1,4 @@
-import { createMiddleware } from "@tanstack/react-start";
+﻿import { createMiddleware } from "@tanstack/react-start";
 
 import { requireSupabaseAuth } from "./auth-middleware";
 import { userHasAdminRole } from "./admin.server";
@@ -22,3 +22,4 @@ export const requireAdmin = createMiddleware({ type: "function" })
     }
     return next();
   });
+

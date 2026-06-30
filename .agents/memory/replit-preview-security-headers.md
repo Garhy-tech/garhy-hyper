@@ -1,4 +1,4 @@
----
+﻿---
 name: Replit preview & security response headers
 description: Why framing/CSP/HSTS response headers must be production-gated on Replit, or the dev preview breaks.
 ---
@@ -16,7 +16,7 @@ Always-on (safe in dev): `X-Content-Type-Options`, `Referrer-Policy`,
 **Why:** the Replit workspace preview pane renders the running app inside a
 **cross-origin iframe** (proxied via mTLS), and dev uses Vite **HMR websockets**.
 `X-Frame-Options: SAMEORIGIN` / `frame-ancestors 'self'` block the preview iframe,
-and a strict CSP can block HMR — both make the preview pane go blank during
+and a strict CSP can block HMR â€” both make the preview pane go blank during
 development while looking fine in a normal browser tab.
 
 **How to apply:** apply the headers from the request middleware / server fetch
@@ -25,3 +25,4 @@ boundary; verify the production set by running the built server with
 `curl -D -`. CSP `connect-src` must include the Supabase origin (resolve from
 `SUPABASE_URL`) plus `https://*.supabase.co` and `wss://*.supabase.co`; product
 images come from arbitrary hosts so `img-src` needs `https:`.
+

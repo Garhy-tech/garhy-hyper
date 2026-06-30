@@ -1,4 +1,4 @@
-import { useTheme } from "next-themes";
+﻿import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -9,7 +9,7 @@ export function ThemeToggle() {
 
   // next-themes can only resolve the stored theme on the client. Render a
   // deterministic placeholder (matching the SSR default) until mounted so the
-  // server HTML and first client render agree — otherwise a stored non-default
+  // server HTML and first client render agree â€” otherwise a stored non-default
   // theme triggers a hydration mismatch.
   useEffect(() => setMounted(true), []);
 
@@ -25,3 +25,4 @@ export function ThemeToggle() {
     </Button>
   );
 }
+

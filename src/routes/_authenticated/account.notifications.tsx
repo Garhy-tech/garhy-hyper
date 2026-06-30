@@ -1,11 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { Bell } from "lucide-react";
 import { PageHeader } from "@/components/common/page-header";
 import { EmptyState } from "@/components/common/empty-state";
 import { useLanguage } from "@/hooks/use-language";
 
 export const Route = createFileRoute("/_authenticated/account/notifications")({
-  head: () => ({ meta: [{ title: "Notifications — GARHY | HYPER" }] }),
+  head: () => ({ meta: [{ title: "Notifications â€” GARHY | HYPER" }] }),
   component: RouteComponent,
 });
 
@@ -22,3 +22,4 @@ function RouteComponent() {
     </div>
   );
 }
+

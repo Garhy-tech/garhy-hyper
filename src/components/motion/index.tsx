@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import {
   motion,
   useReducedMotion,
@@ -90,7 +90,7 @@ export function HoverLift({ children, className }: { children: ReactNode; classN
 }
 
 /* ============================================================
-   AnimatedCounter — spring-eased numeric counter that animates
+   AnimatedCounter â€” spring-eased numeric counter that animates
    from 0 to `value` once it enters the viewport.
 ============================================================ */
 export function AnimatedCounter({
@@ -138,7 +138,7 @@ export function AnimatedCounter({
 }
 
 /* ============================================================
-   ProgressiveImage — blur-up image with smooth opacity fade.
+   ProgressiveImage â€” blur-up image with smooth opacity fade.
 ============================================================ */
 export function ProgressiveImage({
   src,
@@ -176,3 +176,4 @@ export function ProgressiveImage({
     </div>
   );
 }
+

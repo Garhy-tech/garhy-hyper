@@ -1,11 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { ShieldCheck, KeyRound, Smartphone, Monitor } from "lucide-react";
 import { PageHeader } from "@/components/common/page-header";
 import { FadeIn, Stagger, StaggerItem } from "@/components/motion";
 import { useLanguage } from "@/hooks/use-language";
 
 export const Route = createFileRoute("/_authenticated/account/security")({
-  head: () => ({ meta: [{ title: "Security — GARHY | HYPER" }] }),
+  head: () => ({ meta: [{ title: "Security â€” GARHY | HYPER" }] }),
   component: SecurityPage,
 });
 
@@ -16,31 +16,31 @@ function SecurityPage() {
     {
       Icon: KeyRound,
       en: "Password",
-      ar: "كلمة المرور",
-      hint: lang === "ar" ? "آخر تحديث منذ 30 يوم" : "Last updated 30 days ago",
-      action: lang === "ar" ? "تغيير" : "Change",
+      ar: "ظƒظ„ظ…ط© ط§ظ„ظ…ط±ظˆط±",
+      hint: lang === "ar" ? "ط¢ط®ط± طھط­ط¯ظٹط« ظ…ظ†ط° 30 ظٹظˆظ…" : "Last updated 30 days ago",
+      action: lang === "ar" ? "طھط؛ظٹظٹط±" : "Change",
     },
     {
       Icon: Smartphone,
       en: "Two-factor authentication",
-      ar: "التحقق بخطوتين",
-      hint: lang === "ar" ? "غير مفعّل" : "Not enabled",
-      action: lang === "ar" ? "تفعيل" : "Enable",
+      ar: "ط§ظ„طھط­ظ‚ظ‚ ط¨ط®ط·ظˆطھظٹظ†",
+      hint: lang === "ar" ? "ط؛ظٹط± ظ…ظپط¹ظ‘ظ„" : "Not enabled",
+      action: lang === "ar" ? "طھظپط¹ظٹظ„" : "Enable",
     },
     {
       Icon: Monitor,
       en: "Active sessions",
-      ar: "الجلسات النشطة",
-      hint: lang === "ar" ? "جهاز واحد" : "1 device",
-      action: lang === "ar" ? "إدارة" : "Manage",
+      ar: "ط§ظ„ط¬ظ„ط³ط§طھ ط§ظ„ظ†ط´ط·ط©",
+      hint: lang === "ar" ? "ط¬ظ‡ط§ط² ظˆط§ط­ط¯" : "1 device",
+      action: lang === "ar" ? "ط¥ط¯ط§ط±ط©" : "Manage",
     },
   ];
 
   return (
     <div className="space-y-6">
       <PageHeader
-        eyebrow={lang === "ar" ? "الحساب" : "Account"}
-        title={lang === "ar" ? "الأمان" : "Security"}
+        eyebrow={lang === "ar" ? "ط§ظ„ط­ط³ط§ط¨" : "Account"}
+        title={lang === "ar" ? "ط§ظ„ط£ظ…ط§ظ†" : "Security"}
       />
 
       <FadeIn>
@@ -50,11 +50,11 @@ function SecurityPage() {
           </span>
           <div>
             <p className="font-display font-bold">
-              {lang === "ar" ? "حسابك محمي" : "Your account is protected"}
+              {lang === "ar" ? "ط­ط³ط§ط¨ظƒ ظ…ط­ظ…ظٹ" : "Your account is protected"}
             </p>
             <p className="text-xs text-muted-foreground">
               {lang === "ar"
-                ? "نوصي بتفعيل التحقق بخطوتين لمزيد من الأمان."
+                ? "ظ†ظˆطµظٹ ط¨طھظپط¹ظٹظ„ ط§ظ„طھط­ظ‚ظ‚ ط¨ط®ط·ظˆطھظٹظ† ظ„ظ…ط²ظٹط¯ ظ…ظ† ط§ظ„ط£ظ…ط§ظ†."
                 : "Enable two-factor authentication for extra security."}
             </p>
           </div>
@@ -85,3 +85,4 @@ function SecurityPage() {
     </div>
   );
 }
+

@@ -1,4 +1,4 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+﻿import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { Mail, Phone, UserPlus, Loader2 } from "lucide-react";
 import { toast } from "sonner";
@@ -13,7 +13,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useLanguage } from "@/hooks/use-language";
 
 export const Route = createFileRoute("/auth")({
-  head: () => ({ meta: [{ title: "Sign in — GARHY | HYPER" }] }),
+  head: () => ({ meta: [{ title: "Sign in â€” GARHY | HYPER" }] }),
   component: AuthPage,
 });
 
@@ -32,7 +32,7 @@ function AuthPage() {
           <div className="mt-4 h-px w-12 bg-gold" />
         </div>
         <p className="text-xs text-muted-foreground" suppressHydrationWarning>
-          © {new Date().getFullYear()} GARHY | HYPER
+          آ© {new Date().getFullYear()} GARHY | HYPER
         </p>
       </div>
 
@@ -220,7 +220,7 @@ function Register() {
     });
     setLoading(false);
     if (error) return toast.error(error.message);
-    toast.success("Account created — check your email");
+    toast.success("Account created â€” check your email");
   };
 
   return (
@@ -265,3 +265,4 @@ function Register() {
     </form>
   );
 }
+

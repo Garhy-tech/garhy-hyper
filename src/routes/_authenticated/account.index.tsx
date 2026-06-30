@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Package,
   Heart,
@@ -19,7 +19,7 @@ import { useCart, useCountry, useWishlist } from "@/contexts/commerce-context";
 import { useLanguage } from "@/hooks/use-language";
 
 export const Route = createFileRoute("/_authenticated/account/")({
-  head: () => ({ meta: [{ title: "Account — GARHY | HYPER" }] }),
+  head: () => ({ meta: [{ title: "Account â€” GARHY | HYPER" }] }),
   component: AccountOverview,
 });
 
@@ -41,25 +41,25 @@ function AccountOverview() {
                 {t("account.welcome")}
               </p>
               <h1 className="mt-2 font-display text-2xl font-extrabold leading-tight sm:text-3xl">
-                {lang === "ar" ? "لوحة التحكم الخاصة بك" : "Your premium dashboard"}
+                {lang === "ar" ? "ظ„ظˆط­ط© ط§ظ„طھط­ظƒظ… ط§ظ„ط®ط§طµط© ط¨ظƒ" : "Your premium dashboard"}
               </h1>
               <p className="mt-2 max-w-md text-sm opacity-90">
                 {lang === "ar"
-                  ? "تابع طلباتك، مكافآتك، ومحفظتك في مكان واحد."
-                  : "Track orders, rewards and wallet — all in one elegant place."}
+                  ? "طھط§ط¨ط¹ ط·ظ„ط¨ط§طھظƒطŒ ظ…ظƒط§ظپط¢طھظƒطŒ ظˆظ…ط­ظپط¸طھظƒ ظپظٹ ظ…ظƒط§ظ† ظˆط§ط­ط¯."
+                  : "Track orders, rewards and wallet â€” all in one elegant place."}
               </p>
             </div>
             <div className="rounded-2xl bg-background/15 p-4 backdrop-blur sm:min-w-[220px]">
               <div className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.18em] opacity-90">
                 <Sparkles className="h-3.5 w-3.5" />
-                {lang === "ar" ? "المكافآت" : "Rewards"}
+                {lang === "ar" ? "ط§ظ„ظ…ظƒط§ظپط¢طھ" : "Rewards"}
               </div>
               <p className="mt-2 font-display text-2xl font-extrabold">
-                {lang === "ar" ? "قريباً" : "Coming soon"}
+                {lang === "ar" ? "ظ‚ط±ظٹط¨ط§ظ‹" : "Coming soon"}
               </p>
               <p className="mt-1.5 text-[11px] opacity-90">
                 {lang === "ar"
-                  ? "برنامج المكافآت قيد الإعداد."
+                  ? "ط¨ط±ظ†ط§ظ…ط¬ ط§ظ„ظ…ظƒط§ظپط¢طھ ظ‚ظٹط¯ ط§ظ„ط¥ط¹ط¯ط§ط¯."
                   : "Our rewards program is on the way."}
               </p>
             </div>
@@ -70,25 +70,25 @@ function AccountOverview() {
       {/* STATS */}
       <Stagger className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         <StatTile
-          label={lang === "ar" ? "الطلبات" : "Orders"}
+          label={lang === "ar" ? "ط§ظ„ط·ظ„ط¨ط§طھ" : "Orders"}
           value={0}
           icon={Package}
           accent="brand"
         />
         <StatTile
-          label={lang === "ar" ? "في المفضلة" : "Wishlist"}
+          label={lang === "ar" ? "ظپظٹ ط§ظ„ظ…ظپط¶ظ„ط©" : "Wishlist"}
           value={wish.count}
           icon={Heart}
           accent="conversion"
         />
         <StatTile
-          label={lang === "ar" ? "العربة" : "Cart"}
+          label={lang === "ar" ? "ط§ظ„ط¹ط±ط¨ط©" : "Cart"}
           value={cart.count}
           icon={ArrowUpRight}
           accent="cyan"
         />
         <StatTile
-          label={lang === "ar" ? "المحفظة" : "Wallet"}
+          label={lang === "ar" ? "ط§ظ„ظ…ط­ظپط¸ط©" : "Wallet"}
           valueText={format(0)}
           icon={Wallet}
           accent="gold"
@@ -98,8 +98,8 @@ function AccountOverview() {
       {/* QUICK ACTIONS */}
       <section>
         <SectionTitle
-          eyebrow={lang === "ar" ? "اختصارات" : "Quick actions"}
-          title={lang === "ar" ? "كل ما تحتاجه" : "Everything in one tap"}
+          eyebrow={lang === "ar" ? "ط§ط®طھطµط§ط±ط§طھ" : "Quick actions"}
+          title={lang === "ar" ? "ظƒظ„ ظ…ط§ طھط­طھط§ط¬ظ‡" : "Everything in one tap"}
         />
         <Stagger className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
           {QUICK_LINKS(lang === "ar" ? "ar" : "en").map((q) => (
@@ -117,17 +117,17 @@ function AccountOverview() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
-                  {lang === "ar" ? "نشاط حسابك" : "Activity"}
+                  {lang === "ar" ? "ظ†ط´ط§ط· ط­ط³ط§ط¨ظƒ" : "Activity"}
                 </p>
                 <h3 className="mt-1 font-display text-lg font-bold">
-                  {lang === "ar" ? "الطلبات الأخيرة" : "Recent orders"}
+                  {lang === "ar" ? "ط§ظ„ط·ظ„ط¨ط§طھ ط§ظ„ط£ط®ظٹط±ط©" : "Recent orders"}
                 </h3>
               </div>
               <Link
                 to="/account/orders"
                 className="rounded text-xs font-semibold text-brand hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
               >
-                {lang === "ar" ? "عرض الكل" : "View all"}
+                {lang === "ar" ? "ط¹ط±ط¶ ط§ظ„ظƒظ„" : "View all"}
               </Link>
             </div>
             <div className="mt-5 grid place-items-center rounded-xl border border-dashed border-hairline bg-surface/40 px-6 py-10 text-center">
@@ -139,18 +139,18 @@ function AccountOverview() {
                 <Package className="h-5 w-5" />
               </motion.div>
               <p className="mt-3 text-sm font-semibold">
-                {lang === "ar" ? "لا توجد طلبات بعد" : "No orders yet"}
+                {lang === "ar" ? "ظ„ط§ طھظˆط¬ط¯ ط·ظ„ط¨ط§طھ ط¨ط¹ط¯" : "No orders yet"}
               </p>
               <p className="mt-1 max-w-xs text-xs text-muted-foreground">
                 {lang === "ar"
-                  ? "ابدأ التسوق لرؤية طلباتك هنا."
+                  ? "ط§ط¨ط¯ط£ ط§ظ„طھط³ظˆظ‚ ظ„ط±ط¤ظٹط© ط·ظ„ط¨ط§طھظƒ ظ‡ظ†ط§."
                   : "Start shopping to see your orders here."}
               </p>
               <Link
                 to="/catalog"
                 className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-foreground px-4 py-2 text-xs font-bold text-background transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
-                {lang === "ar" ? "ابدأ التسوق" : "Start shopping"}
+                {lang === "ar" ? "ط§ط¨ط¯ط£ ط§ظ„طھط³ظˆظ‚" : "Start shopping"}
                 <ArrowUpRight className="h-3.5 w-3.5" />
               </Link>
             </div>
@@ -160,18 +160,18 @@ function AccountOverview() {
         <FadeIn delay={0.08}>
           <div className="flex h-full flex-col rounded-2xl border border-hairline bg-card p-5 sm:p-6">
             <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
-              {lang === "ar" ? "موصى لك" : "Recommended"}
+              {lang === "ar" ? "ظ…ظˆطµظ‰ ظ„ظƒ" : "Recommended"}
             </p>
             <h3 className="mt-1 font-display text-lg font-bold">
-              {lang === "ar" ? "أكمل ملفك الشخصي" : "Complete your profile"}
+              {lang === "ar" ? "ط£ظƒظ…ظ„ ظ…ظ„ظپظƒ ط§ظ„ط´ط®طµظٹ" : "Complete your profile"}
             </h3>
             <div className="mt-4 space-y-3">
               {[
-                { en: "Add a shipping address", ar: "أضف عنوان الشحن", to: "/account/addresses" },
-                { en: "Verify phone number", ar: "تحقق من رقم الهاتف", to: "/account/security" },
+                { en: "Add a shipping address", ar: "ط£ط¶ظپ ط¹ظ†ظˆط§ظ† ط§ظ„ط´ط­ظ†", to: "/account/addresses" },
+                { en: "Verify phone number", ar: "طھط­ظ‚ظ‚ ظ…ظ† ط±ظ‚ظ… ط§ظ„ظ‡ط§طھظپ", to: "/account/security" },
                 {
                   en: "Set notification preferences",
-                  ar: "تفضيلات الإشعارات",
+                  ar: "طھظپط¶ظٹظ„ط§طھ ط§ظ„ط¥ط´ط¹ط§ط±ط§طھ",
                   to: "/account/notifications",
                 },
               ].map((step, i) => (
@@ -298,59 +298,60 @@ function QUICK_LINKS(lang: "en" | "ar") {
   return [
     {
       to: "/account/orders",
-      label: L("Orders", "الطلبات"),
-      hint: L("Track shipments", "تتبع الشحنات"),
+      label: L("Orders", "ط§ظ„ط·ظ„ط¨ط§طھ"),
+      hint: L("Track shipments", "طھطھط¨ط¹ ط§ظ„ط´ط­ظ†ط§طھ"),
       Icon: Package,
       tone: "bg-brand-soft text-brand",
     },
     {
       to: "/wishlist",
-      label: L("Wishlist", "المفضلة"),
-      hint: L("Saved items", "العناصر المحفوظة"),
+      label: L("Wishlist", "ط§ظ„ظ…ظپط¶ظ„ط©"),
+      hint: L("Saved items", "ط§ظ„ط¹ظ†ط§طµط± ط§ظ„ظ…ط­ظپظˆط¸ط©"),
       Icon: Heart,
       tone: "bg-conversion/15 text-conversion",
     },
     {
       to: "/account/wallet",
-      label: L("Wallet", "المحفظة"),
-      hint: L("Balance & top-ups", "الرصيد والشحن"),
+      label: L("Wallet", "ط§ظ„ظ…ط­ظپط¸ط©"),
+      hint: L("Balance & top-ups", "ط§ظ„ط±طµظٹط¯ ظˆط§ظ„ط´ط­ظ†"),
       Icon: Wallet,
       tone: "bg-amber-400/15 text-amber-600 dark:text-amber-400",
     },
     {
       to: "/account/rewards",
-      label: L("Rewards", "المكافآت"),
-      hint: L("Tiers & perks", "المستويات والمميزات"),
+      label: L("Rewards", "ط§ظ„ظ…ظƒط§ظپط¢طھ"),
+      hint: L("Tiers & perks", "ط§ظ„ظ…ط³طھظˆظٹط§طھ ظˆط§ظ„ظ…ظ…ظٹط²ط§طھ"),
       Icon: Gift,
       tone: "bg-fuchsia-400/15 text-fuchsia-600 dark:text-fuchsia-400",
     },
     {
       to: "/account/coupons",
-      label: L("Coupons", "القسائم"),
-      hint: L("Active discounts", "الخصومات الفعّالة"),
+      label: L("Coupons", "ط§ظ„ظ‚ط³ط§ط¦ظ…"),
+      hint: L("Active discounts", "ط§ظ„ط®طµظˆظ…ط§طھ ط§ظ„ظپط¹ظ‘ط§ظ„ط©"),
       Icon: Ticket,
       tone: "bg-cyan-500/15 text-cyan-600 dark:text-cyan-400",
     },
     {
       to: "/account/addresses",
-      label: L("Addresses", "العناوين"),
-      hint: L("Shipping book", "دفتر العناوين"),
+      label: L("Addresses", "ط§ظ„ط¹ظ†ط§ظˆظٹظ†"),
+      hint: L("Shipping book", "ط¯ظپطھط± ط§ظ„ط¹ظ†ط§ظˆظٹظ†"),
       Icon: MapPin,
       tone: "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400",
     },
     {
       to: "/account/notifications",
-      label: L("Notifications", "الإشعارات"),
-      hint: L("What to alert you", "ماذا ننبهك عنه"),
+      label: L("Notifications", "ط§ظ„ط¥ط´ط¹ط§ط±ط§طھ"),
+      hint: L("What to alert you", "ظ…ط§ط°ط§ ظ†ظ†ط¨ظ‡ظƒ ط¹ظ†ظ‡"),
       Icon: Bell,
       tone: "bg-indigo-500/15 text-indigo-600 dark:text-indigo-400",
     },
     {
       to: "/account/security",
-      label: L("Security", "الأمان"),
-      hint: L("Passwords & 2FA", "كلمات المرور والتحقق"),
+      label: L("Security", "ط§ظ„ط£ظ…ط§ظ†"),
+      hint: L("Passwords & 2FA", "ظƒظ„ظ…ط§طھ ط§ظ„ظ…ط±ظˆط± ظˆط§ظ„طھط­ظ‚ظ‚"),
       Icon: ShieldCheck,
       tone: "bg-rose-500/15 text-rose-600 dark:text-rose-400",
     },
   ] as const;
 }
+

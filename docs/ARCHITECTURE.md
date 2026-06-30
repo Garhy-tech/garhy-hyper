@@ -1,4 +1,4 @@
-# Architecture
+﻿# Architecture
 
 GARHY | HYPER is a server-side-rendered React 19 application built on TanStack
 Start. This document explains how the runtime fits together.
@@ -23,47 +23,47 @@ Start. This document explains how the runtime fits together.
 File-based routing lives under `src/routes/` (conventions in
 `src/routes/README.md`). Highlights:
 
-- **`__root.tsx`** — the app shell: HTML/head, provider tree, i18n wiring, and
+- **`__root.tsx`** â€” the app shell: HTML/head, provider tree, i18n wiring, and
   the top-level `<Outlet />`.
-- **`_authenticated/route.tsx`** — a pathless layout that guards everything
+- **`_authenticated/route.tsx`** â€” a pathless layout that guards everything
   beneath it. Its `beforeLoad` runs a Supabase `getUser()` check and redirects
   to `/auth` when there is no session. It renders client-side (`ssr: false`) so
   the auth check happens against the browser session.
-- **Customer area** — `account.*.tsx` (orders, profile, addresses, wallet,
-  rewards, security, notifications, …).
-- **Admin area** — `admin.*.tsx` (analytics, products, categories, customers,
+- **Customer area** â€” `account.*.tsx` (orders, profile, addresses, wallet,
+  rewards, security, notifications, â€¦).
+- **Admin area** â€” `admin.*.tsx` (analytics, products, categories, customers,
   orders, settings, integrations, notifications).
-- **Storefront** — `index.tsx`, `catalog.*`, `product.$slug.tsx`, `cart.tsx`,
+- **Storefront** â€” `index.tsx`, `catalog.*`, `product.$slug.tsx`, `cart.tsx`,
   `checkout.tsx`, `wishlist.tsx`, `search.tsx`, `contact.tsx`.
 
-`src/routeTree.gen.ts` is generated — never edited by hand, and excluded from
+`src/routeTree.gen.ts` is generated â€” never edited by hand, and excluded from
 lint/format.
 
 ## 3. Supabase integration (`src/integrations/supabase/`)
 
-- **`client.ts`** — browser client via `createBrowserClient` (`@supabase/ssr`).
+- **`client.ts`** â€” browser client via `createBrowserClient` (`@supabase/ssr`).
   Includes a self-contained `MinimalWS` WebSocket shim so `@supabase/realtime-js`
   does not throw under Node.js 20 SSR (Node 20 lacks a native global
   `WebSocket`; Node 22+ has one). The shim needs no extra packages; Realtime is
   inert server-side, which is fine because auth/REST do not use it.
-- **`server.ts`** — `createSupabaseServerClient(request)` parses and serializes
+- **`server.ts`** â€” `createSupabaseServerClient(request)` parses and serializes
   auth cookies so the server sees the same session as the browser.
-- **`auth-attacher.ts`** — client middleware that attaches the Supabase JWT to
+- **`auth-attacher.ts`** â€” client middleware that attaches the Supabase JWT to
   the `Authorization` header of server-function (RPC) calls.
-- **`auth-middleware.ts`** — server middleware that validates that JWT and
+- **`auth-middleware.ts`** â€” server middleware that validates that JWT and
   exposes `userId` / claims to the function context.
 
 ## 4. Data fetching
 
 - **Server functions** live in `src/lib/api/` (`createServerFn`). They issue
-  direct `fetch` calls to Supabase PostgREST (`/rest/v1/…`) rather than using a
+  direct `fetch` calls to Supabase PostgREST (`/rest/v1/â€¦`) rather than using a
   Realtime-capable client, keeping SSR lightweight.
 - **Route loaders** call these server functions; **TanStack Query** caches and
   hydrates results between server and client.
 
 ### Graceful empty states
 
-The PostgREST helper treats `404`/`406` (missing table / no rows — common before
+The PostgREST helper treats `404`/`406` (missing table / no rows â€” common before
 migrations are applied) as **empty results** instead of errors. The UI then
 renders localized empty states (`src/components/common/empty-state.tsx`) or
 loading skeletons. The app never assumes the schema is present.
@@ -83,19 +83,19 @@ loading skeletons. The app never assumes the schema is present.
 - **Lightning CSS** is the configured CSS transformer (`css.transformer:
   "lightningcss"` in `vite.config.ts`) so dev output matches the production
   build.
-- The design system (luxury tokens — gold accents, hairline borders, elevated
+- The design system (luxury tokens â€” gold accents, hairline borders, elevated
   shadows) is defined in the global stylesheet.
 
 ## 7. Path aliases
 
 `@/*` maps to `src/*`. This is declared in `tsconfig.json` and mirrored by
-`resolve.alias` in `vite.config.ts` — no extra Vite plugin is required.
+`resolve.alias` in `vite.config.ts` â€” no extra Vite plugin is required.
 
 ## 8. Catalog data model (enterprise)
 
 Migration `supabase/migrations/003_enterprise_catalog.sql` layers a normalized,
 enterprise-grade catalog on top of the original flat schema. It is **additive and
-idempotent** — it never drops or rewrites existing columns/tables — and ships
+idempotent** â€” it never drops or rewrites existing columns/tables â€” and ships
 **empty** (no seed/demo data).
 
 ### 8.1 Augment, don't rewrite (backward compatibility)
@@ -118,7 +118,7 @@ unchanged. Enterprise capability is added two ways:
 - **Org / sourcing:** `countries`, `currencies`, `factories` (public origin info),
   `suppliers`, `distributors` (private commercial partners).
 - **Product structure:** `product_variants`, `product_options`,
-  `product_option_values`, `variant_option_values` (variant ↔ option M:N).
+  `product_option_values`, `variant_option_values` (variant â†” option M:N).
 - **Descriptive:** `attributes` + `product_attribute_values` (typed, filterable),
   `product_specs`, `product_certifications`.
 - **Pricing engine:** `price_lists` (per channel + currency), `product_prices`
@@ -129,7 +129,7 @@ unchanged. Enterprise capability is added two ways:
 - **Media & merchandising:** `product_media`, `product_relationships`
   (related / cross-sell / up-sell), `product_bundles` + `bundle_items`,
   `recommendation_sets` + `recommendation_items`.
-- **Signals:** `customer_product_interactions` — range-partitioned by
+- **Signals:** `customer_product_interactions` â€” range-partitioned by
   `occurred_at` (month) with a `DEFAULT` partition so it is writable immediately.
 
 ### 8.3 Search
@@ -144,12 +144,12 @@ description and brand name, indexed with GIN. Trigram (`pg_trgm`) GIN indexes on
 Row-Level Security is enabled on every new table. Access is split by sensitivity:
 
 - **Public catalog tables** (variants, options, attributes, specs, media, bundles,
-  recommendations, reference data, …): `anon` / `authenticated` get **`SELECT`
+  recommendations, reference data, â€¦): `anon` / `authenticated` get **`SELECT`
   only**, backed by permissive read policies.
 - **Sensitive tables** (`suppliers`, `distributors`, `price_lists`,
   `product_prices`, `price_tiers`, `warehouses`, `variant_inventory`,
   `variant_customs`, `customer_product_interactions`): **no `anon` /
-  `authenticated` privileges at all** — `service_role` only.
+  `authenticated` privileges at all** â€” `service_role` only.
 
 Because Supabase default privileges auto-grant a few non-data privileges
 (`REFERENCES` / `TRIGGER` / `TRUNCATE`) to `anon`/`authenticated` on every new
@@ -160,11 +160,12 @@ Retail pricing and stock availability still need to reach the public storefront
 **without** exposing the sensitive base tables. This is done with three curated,
 owner-privileged views (`security_invoker = false`):
 
-- `v_public_product_prices` — active **retail-channel** prices only.
-- `v_public_price_tiers` — quantity breaks for those retail prices.
-- `v_public_variant_availability` — aggregated `available_qty` / `in_stock` per
+- `v_public_product_prices` â€” active **retail-channel** prices only.
+- `v_public_price_tiers` â€” quantity breaks for those retail prices.
+- `v_public_variant_availability` â€” aggregated `available_qty` / `in_stock` per
   variant (never per-warehouse internals).
 
 `anon` is granted `SELECT` on the views, not on `product_prices` /
 `variant_inventory`, so the curated projection is public while the raw commercial
 data stays locked down.
+

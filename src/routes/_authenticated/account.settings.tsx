@@ -1,4 +1,4 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+﻿import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { LogOut } from "lucide-react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/hooks/use-language";
 
 export const Route = createFileRoute("/_authenticated/account/settings")({
-  head: () => ({ meta: [{ title: "Settings — GARHY | HYPER" }] }),
+  head: () => ({ meta: [{ title: "Settings â€” GARHY | HYPER" }] }),
   component: SettingsPage,
 });
 
@@ -45,3 +45,4 @@ function SettingsPage() {
     </div>
   );
 }
+

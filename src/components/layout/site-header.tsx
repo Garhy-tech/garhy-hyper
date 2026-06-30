@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "@tanstack/react-router";
+﻿import { Link, useNavigate } from "@tanstack/react-router";
 import { motion, useAnimation } from "framer-motion";
 import {
   Heart,
@@ -78,7 +78,7 @@ export function SiteHeader() {
         >
           <Logo />
 
-          {/* Search (desktop) — opens overlay */}
+          {/* Search (desktop) â€” opens overlay */}
           <form onSubmit={onSearch} className="hidden flex-1 md:flex">
             <button
               type="button"
@@ -169,7 +169,7 @@ export function SiteHeader() {
           </div>
         </div>
 
-        {/* Secondary nav (desktop) — host for mega menu */}
+        {/* Secondary nav (desktop) â€” host for mega menu */}
         <div className="relative hidden border-t border-hairline md:block">
           <div className="mx-auto flex max-w-7xl items-center gap-1 px-4 sm:px-6 lg:px-8">
             <Link
@@ -212,9 +212,9 @@ export function SiteHeader() {
             <span className="ms-auto inline-flex items-center text-xs text-muted-foreground">
               <span className="me-2 inline-flex items-center gap-1.5">
                 <Globe2 className="h-3.5 w-3.5" aria-hidden />
-                {lang === "ar" ? "نشحن إلى 15 دولة" : "Shipping to 15 countries"}
+                {lang === "ar" ? "ظ†ط´ط­ظ† ط¥ظ„ظ‰ 15 ط¯ظˆظ„ط©" : "Shipping to 15 countries"}
               </span>
-              · {t("header.deliverTo")}
+              آ· {t("header.deliverTo")}
             </span>
           </div>
 
@@ -233,7 +233,7 @@ export function SiteHeader() {
                 { to: "/account", label: t("nav.account") },
                 {
                   to: "/account/notifications",
-                  label: lang === "ar" ? "الإشعارات" : "Notifications",
+                  label: lang === "ar" ? "ط§ظ„ط¥ط´ط¹ط§ط±ط§طھ" : "Notifications",
                 },
               ].map((item) => (
                 <Link
@@ -255,3 +255,4 @@ export function SiteHeader() {
     </>
   );
 }
+

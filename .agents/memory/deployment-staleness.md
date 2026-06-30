@@ -1,4 +1,4 @@
----
+﻿---
 name: Live storefront staleness vs dev/DB
 description: Why "demo content still on the live site" after cleaning dev is usually a stale deployment, and how to confirm it.
 ---
@@ -10,7 +10,7 @@ production database). Wiping the catalog via psql affects what both dev and the
 live site read.
 
 The app deploys as an **autoscale** target serving a built artifact
-(`.output/server/index.mjs`, Nitro `node-server` SSR — no SSG/prerender). Two
+(`.output/server/index.mjs`, Nitro `node-server` SSR â€” no SSG/prerender). Two
 consequences:
 
 - The live site fetches catalog data from Supabase **at request time**, so an
@@ -26,7 +26,7 @@ cleaned is almost always a **stale build**: stale marketing copy and unguarded
 section shells, not real demo products (those come from the now-empty DB).
 
 **How to confirm (do this before changing any code):**
-1. `getDeploymentInfo()` → get `primaryUrl`, confirm `isDeployed`/`hasSuccessfulBuild`.
+1. `getDeploymentInfo()` â†’ get `primaryUrl`, confirm `isDeployed`/`hasSuccessfulBuild`.
 2. Screenshot or `curl` the production URL and compare against the dev preview.
 3. `curl` the live HTML and grep for product links (`/product/`), external `<img>`
    srcs, supabase `storage` image refs, and demo brand names. Zero of those = no
@@ -37,3 +37,4 @@ section shells, not real demo products (those come from the now-empty DB).
 
 **Why this matters:** it prevents hunting for a non-existent hardcoded/demo data
 source in code when the real cause is deployment freshness.
+

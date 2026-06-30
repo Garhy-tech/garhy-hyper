@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { useLanguage } from "@/hooks/use-language";
 
 // Returns the next occurrence of midnight local time
@@ -43,3 +43,4 @@ export function FlashCountdown() {
     </div>
   );
 }
+

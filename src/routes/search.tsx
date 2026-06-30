@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { Search as SearchIcon } from "lucide-react";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { useLanguage } from "@/hooks/use-language";
 
 export const Route = createFileRoute("/search")({
-  head: () => ({ meta: [{ title: "Search — GARHY | HYPER" }] }),
+  head: () => ({ meta: [{ title: "Search â€” GARHY | HYPER" }] }),
   component: SearchPage,
 });
 
@@ -33,3 +33,4 @@ function SearchPage() {
     </div>
   );
 }
+

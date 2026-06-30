@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/common/page-header";
 import { EmptyState } from "@/components/common/empty-state";
 import { useLanguage } from "@/hooks/use-language";
@@ -6,7 +6,7 @@ import { useLanguage } from "@/hooks/use-language";
 export const Route = createFileRoute("/catalog/$category")({
   head: ({ params }) => ({
     meta: [
-      { title: `${params.category} — GARHY | HYPER` },
+      { title: `${params.category} â€” GARHY | HYPER` },
       { name: "description", content: `Shop ${params.category} at GARHY | HYPER.` },
     ],
   }),
@@ -23,3 +23,4 @@ function CategoryPage() {
     </div>
   );
 }
+

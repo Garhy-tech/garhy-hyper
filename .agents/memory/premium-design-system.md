@@ -1,4 +1,4 @@
----
+﻿---
 name: Premium design system (deepen, don't rewrite)
 description: The storefront already ships a mature glassmorphism design system; how to extend it safely.
 ---
@@ -7,7 +7,7 @@ description: The storefront already ships a mature glassmorphism design system; 
 
 The storefront already has a complete, enterprise-grade premium design system. When
 a request says "redesign / make it premium / glassmorphism", **deepen the existing
-direction — do not rip it up and rebuild.** A from-scratch redesign here is wasted
+direction â€” do not rip it up and rebuild.** A from-scratch redesign here is wasted
 effort and risks regressing a well-architected system.
 
 What already exists (all token-driven in `src/styles.css`, Tailwind v4 `@theme`):
@@ -27,10 +27,11 @@ is already premium.
 **How to apply / safe extension points:**
 - Global ambient depth: a token-driven aurora via `body::before` (fixed,
   `z-index:-1`, `pointer-events:none`, with a `.dark` variant + reduced-transparency
-  opt-out). It only shows where route wrappers are transparent — the home wrapper
+  opt-out). It only shows where route wrappers are transparent â€” the home wrapper
   must NOT set an opaque `bg-background` (body supplies the base color).
 - Buttons that navigate: use `<Button asChild><Link/></Button>`, never
   `<Link><Button/></Link>` (the latter nests `<button>` inside `<a>` = invalid HTML,
   bad a11y). Note: legacy code across the app still uses the wrong pattern.
 - Empty catalog: render elegant, intentional empty states (e.g. a "launching soon"
   glass band on home), never blank gaps or infinite shimmer.
+

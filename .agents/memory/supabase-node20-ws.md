@@ -1,4 +1,4 @@
----
+﻿---
 name: Supabase + Node.js 20 WebSocket fix
 description: createClient() throws in Node.js 20 SSR because Realtime needs WebSocket. Fix by providing a transport shim.
 ---
@@ -32,8 +32,9 @@ createClient(url, key, {
 
 **Alternative:** Install `ws` and use `realtime: { transport: ws }` to enable real Realtime in SSR.
 
-**Decision:** `ws` / `@types/ws` are intentionally NOT dependencies of this project — the self-contained shim above is used instead. Do not re-add `ws` assuming it is a missing dependency; only add it if you genuinely need server-side Realtime channels.
+**Decision:** `ws` / `@types/ws` are intentionally NOT dependencies of this project â€” the self-contained shim above is used instead. Do not re-add `ws` assuming it is a missing dependency; only add it if you genuinely need server-side Realtime channels.
 
 ## Status: project now runs on Node 22
 
-The runtime was bumped Node 20 → 22 (`package.json` engines `node >=22.12.0`, `.replit` module `nodejs-22`) — TanStack Start deps require >=22.12.0. Node 22 ships a global `WebSocket`, so the shim path above is now **inert** (`wsTransport` resolves to `undefined`) and `createClient()` no longer throws. The shim is harmless and kept for back-compat; the `ws` decision above still stands.
+The runtime was bumped Node 20 â†’ 22 (`package.json` engines `node >=22.12.0`, `.replit` module `nodejs-22`) â€” TanStack Start deps require >=22.12.0. Node 22 ships a global `WebSocket`, so the shim path above is now **inert** (`wsTransport` resolves to `undefined`) and `createClient()` no longer throws. The shim is harmless and kept for back-compat; the `ws` decision above still stands.
+

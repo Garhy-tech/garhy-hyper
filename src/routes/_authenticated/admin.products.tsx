@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Package, Plus, Pencil, Trash2, Loader2 } from "lucide-react";
 import { PageHeader } from "@/components/common/page-header";
@@ -24,7 +24,7 @@ import {
 } from "@/lib/api/admin.functions";
 
 export const Route = createFileRoute("/_authenticated/admin/products")({
-  head: () => ({ meta: [{ title: "Admin — Products — GARHY | HYPER" }] }),
+  head: () => ({ meta: [{ title: "Admin â€” Products â€” GARHY | HYPER" }] }),
   loader: async () => {
     const [products, categories] = await Promise.all([listAdminProducts(), listAdminCategories()]);
     return { products, categories };
@@ -367,7 +367,7 @@ function RouteComponent() {
               value={form.image_url}
               onChange={(v) => setForm((f) => ({ ...f, image_url: v }))}
               required
-              placeholder="https://…"
+              placeholder="https://â€¦"
             />
           </div>
 
@@ -456,3 +456,4 @@ function RouteComponent() {
     </div>
   );
 }
+

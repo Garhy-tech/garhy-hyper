@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+﻿import { Link } from "@tanstack/react-router";
 import {
   LayoutDashboard,
   User,
@@ -24,35 +24,35 @@ export function AccountSidebar() {
 
   const groups: { title: string; items: Item[] }[] = [
     {
-      title: lang === "ar" ? "نظرة عامة" : "Overview",
+      title: lang === "ar" ? "ظ†ط¸ط±ط© ط¹ط§ظ…ط©" : "Overview",
       items: [
         { to: "/account", label: t("account.overview"), icon: LayoutDashboard, exact: true },
-        { to: "/account/orders", label: lang === "ar" ? "الطلبات" : "Orders", icon: Package },
-        { to: "/wishlist", label: lang === "ar" ? "المفضلة" : "Wishlist", icon: Heart },
+        { to: "/account/orders", label: lang === "ar" ? "ط§ظ„ط·ظ„ط¨ط§طھ" : "Orders", icon: Package },
+        { to: "/wishlist", label: lang === "ar" ? "ط§ظ„ظ…ظپط¶ظ„ط©" : "Wishlist", icon: Heart },
         {
           to: "/account/recently-viewed",
-          label: lang === "ar" ? "شوهد مؤخراً" : "Recently viewed",
+          label: lang === "ar" ? "ط´ظˆظ‡ط¯ ظ…ط¤ط®ط±ط§ظ‹" : "Recently viewed",
           icon: History,
         },
       ],
     },
     {
-      title: lang === "ar" ? "المكافآت والمحفظة" : "Rewards & Wallet",
+      title: lang === "ar" ? "ط§ظ„ظ…ظƒط§ظپط¢طھ ظˆط§ظ„ظ…ط­ظپط¸ط©" : "Rewards & Wallet",
       items: [
-        { to: "/account/wallet", label: lang === "ar" ? "المحفظة" : "Wallet", icon: Wallet },
-        { to: "/account/rewards", label: lang === "ar" ? "المكافآت" : "Rewards", icon: Gift },
-        { to: "/account/coupons", label: lang === "ar" ? "القسائم" : "Coupons", icon: Ticket },
+        { to: "/account/wallet", label: lang === "ar" ? "ط§ظ„ظ…ط­ظپط¸ط©" : "Wallet", icon: Wallet },
+        { to: "/account/rewards", label: lang === "ar" ? "ط§ظ„ظ…ظƒط§ظپط¢طھ" : "Rewards", icon: Gift },
+        { to: "/account/coupons", label: lang === "ar" ? "ط§ظ„ظ‚ط³ط§ط¦ظ…" : "Coupons", icon: Ticket },
       ],
     },
     {
-      title: lang === "ar" ? "الحساب" : "Account",
+      title: lang === "ar" ? "ط§ظ„ط­ط³ط§ط¨" : "Account",
       items: [
         { to: "/account/profile", label: t("account.profile"), icon: User },
         { to: "/account/addresses", label: t("account.addresses"), icon: MapPin },
         { to: "/account/notifications", label: t("account.notifications"), icon: Bell },
         {
           to: "/account/security",
-          label: lang === "ar" ? "الأمان" : "Security",
+          label: lang === "ar" ? "ط§ظ„ط£ظ…ط§ظ†" : "Security",
           icon: ShieldCheck,
         },
         { to: "/account/settings", label: t("account.settings"), icon: Settings },
@@ -100,3 +100,4 @@ export function AccountSidebar() {
     </aside>
   );
 }
+

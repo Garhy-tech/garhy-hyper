@@ -1,4 +1,4 @@
----
+﻿---
 name: Smoke tests / test runner
 description: How to actually run the smoke tests on this project's Node version.
 ---
@@ -20,3 +20,4 @@ The smoke tests hit a live HTTP server (they don't start one), so a workflow mus
 be running on the target port first. The `/product/smoke-test-product` case is
 expected to pass via the honest "product not found" path (200), not via a seeded
 fixture.
+

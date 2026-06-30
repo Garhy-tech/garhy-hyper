@@ -1,4 +1,4 @@
----
+﻿---
 name: SSR i18n hydration trap
 description: Why the storefront crashed on hydration and the rule for i18next language init under SSR.
 ---
@@ -13,8 +13,8 @@ fixed constant that is identical on server AND the first client render. Do NOT s
 `lng: undefined` makes the detector run *synchronously during `i18n.init()`* and pick
 the user's stored language (e.g. `ar` from localStorage `rw_lang`). The server,
 meanwhile, renders with the fixed fallback (`en`). So the first hydrating client
-render is Arabic while the SSR HTML is English → React throws a hydration mismatch
-(seen as Home vs الرئيسية in the mobile bottom nav), which in dev cascades into a
+render is Arabic while the SSR HTML is English â†’ React throws a hydration mismatch
+(seen as Home vs ط§ظ„ط±ط¦ظٹط³ظٹط© in the mobile bottom nav), which in dev cascades into a
 misleading "Invalid hook call" error and a crash. React is correctly deduped, so the
 hook error is a symptom, not the cause.
 
@@ -26,6 +26,7 @@ hook error is a symptom, not the cause.
   to localStorage via `caches: ["localStorage"]` on changeLanguage.
 - `<html lang dir>` in __root.tsx stays `en`/`ltr` with `suppressHydrationWarning`;
   LangSync updates them post-hydration.
-- Accepted tradeoff: a brief EN→AR flash on first load for Arabic-preferring users
+- Accepted tradeoff: a brief ENâ†’AR flash on first load for Arabic-preferring users
   (single-fallback SSR has no per-request language). Eliminating it would require
-  per-request language (cookie) — a larger architecture change, not a bug.
+  per-request language (cookie) â€” a larger architecture change, not a bug.
+

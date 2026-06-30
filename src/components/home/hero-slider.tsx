@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+﻿import { useCallback, useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -27,45 +27,45 @@ type Slide = {
 const SLIDES: Slide[] = [
   {
     id: "welcome",
-    eyebrow: { en: "GARHY | HYPER", ar: "غارهي | هايبر" },
+    eyebrow: { en: "GARHY | HYPER", ar: "ط؛ط§ط±ظ‡ظٹ | ظ‡ط§ظٹط¨ط±" },
     title: {
       en: "Your destination\nfor authentic shopping.",
-      ar: "وجهتك\nللتسوق الأصلي.",
+      ar: "ظˆط¬ظ‡طھظƒ\nظ„ظ„طھط³ظˆظ‚ ط§ظ„ط£طµظ„ظٹ.",
     },
     subtitle: {
       en: "A curated marketplace bringing original products together in one seamless, trusted experience.",
-      ar: "متجر مختار يجمع المنتجات الأصلية في تجربة تسوق واحدة موثوقة وسلسة.",
+      ar: "ظ…طھط¬ط± ظ…ط®طھط§ط± ظٹط¬ظ…ط¹ ط§ظ„ظ…ظ†طھط¬ط§طھ ط§ظ„ط£طµظ„ظٹط© ظپظٹ طھط¬ط±ط¨ط© طھط³ظˆظ‚ ظˆط§ط­ط¯ط© ظ…ظˆط«ظˆظ‚ط© ظˆط³ظ„ط³ط©.",
     },
-    cta: { en: "Start shopping", ar: "ابدأ التسوق" },
+    cta: { en: "Start shopping", ar: "ط§ط¨ط¯ط£ ط§ظ„طھط³ظˆظ‚" },
     to: "/catalog",
     accent: "brand",
     Icon: Globe2,
   },
   {
     id: "trust",
-    eyebrow: { en: "Why GARHY", ar: "لماذا غارهي" },
-    title: { en: "Authentic products,\nfair prices.", ar: "منتجات أصلية،\nبأسعار عادلة." },
+    eyebrow: { en: "Why GARHY", ar: "ظ„ظ…ط§ط°ط§ ط؛ط§ط±ظ‡ظٹ" },
+    title: { en: "Authentic products,\nfair prices.", ar: "ظ…ظ†طھط¬ط§طھ ط£طµظ„ظٹط©طŒ\nط¨ط£ط³ط¹ط§ط± ط¹ط§ط¯ظ„ط©." },
     subtitle: {
       en: "Every item is 100% genuine, backed by fast shipping and dependable support.",
-      ar: "كل منتج أصلي 100%، مع شحن سريع ودعم موثوق.",
+      ar: "ظƒظ„ ظ…ظ†طھط¬ ط£طµظ„ظٹ 100%طŒ ظ…ط¹ ط´ط­ظ† ط³ط±ظٹط¹ ظˆط¯ط¹ظ… ظ…ظˆط«ظˆظ‚.",
     },
-    cta: { en: "Browse catalog", ar: "تصفّح الكتالوج" },
+    cta: { en: "Browse catalog", ar: "طھطµظپظ‘ط­ ط§ظ„ظƒطھط§ظ„ظˆط¬" },
     to: "/catalog",
     accent: "conversion",
     Icon: ShieldCheck,
   },
   {
     id: "new",
-    eyebrow: { en: "Now open", ar: "افتتحنا الآن" },
+    eyebrow: { en: "Now open", ar: "ط§ظپطھطھط­ظ†ط§ ط§ظ„ط¢ظ†" },
     title: {
       en: "Be the first\nto explore.",
-      ar: "كن أول\nمن يكتشف.",
+      ar: "ظƒظ† ط£ظˆظ„\nظ…ظ† ظٹظƒطھط´ظپ.",
     },
     subtitle: {
       en: "Discover new products as our catalog grows.",
-      ar: "اكتشف منتجات جديدة مع نمو متجرنا.",
+      ar: "ط§ظƒطھط´ظپ ظ…ظ†طھط¬ط§طھ ط¬ط¯ظٹط¯ط© ظ…ط¹ ظ†ظ…ظˆ ظ…طھط¬ط±ظ†ط§.",
     },
-    cta: { en: "Explore", ar: "اكتشف" },
+    cta: { en: "Explore", ar: "ط§ظƒطھط´ظپ" },
     to: "/catalog",
     accent: "cyan",
     Icon: Sparkles,
@@ -177,16 +177,16 @@ export function HeroSlider() {
                   </Link>
                   <Link to="/catalog">
                     <Button size="lg" variant="outline" className="h-12 px-7 text-base">
-                      {lang === "ar" ? "اكتشف الأقسام" : "Browse categories"}
+                      {lang === "ar" ? "ط§ظƒطھط´ظپ ط§ظ„ط£ظ‚ط³ط§ظ…" : "Browse categories"}
                     </Button>
                   </Link>
                 </div>
 
                 <div className="mt-8 grid grid-cols-3 gap-2.5 sm:max-w-md">
                   {[
-                    { Icon: ShieldCheck, label: lang === "ar" ? "أصلي 100%" : "100% authentic" },
-                    { Icon: Truck, label: lang === "ar" ? "شحن سريع" : "Fast shipping" },
-                    { Icon: Sparkles, label: lang === "ar" ? "دعم متميز" : "Premium support" },
+                    { Icon: ShieldCheck, label: lang === "ar" ? "ط£طµظ„ظٹ 100%" : "100% authentic" },
+                    { Icon: Truck, label: lang === "ar" ? "ط´ط­ظ† ط³ط±ظٹط¹" : "Fast shipping" },
+                    { Icon: Sparkles, label: lang === "ar" ? "ط¯ط¹ظ… ظ…طھظ…ظٹط²" : "Premium support" },
                   ].map(({ Icon, label }) => (
                     <div
                       key={label}
@@ -273,3 +273,4 @@ export function HeroSlider() {
     </section>
   );
 }
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Expand, X, ZoomIn } from "lucide-react";
 import { useEffect, useState, type MouseEvent } from "react";
@@ -168,3 +168,4 @@ export function ProductGallery({ images, title }: { images: string[]; title: str
     </>
   );
 }
+

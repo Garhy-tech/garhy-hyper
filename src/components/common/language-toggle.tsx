@@ -1,4 +1,4 @@
-import { Languages } from "lucide-react";
+﻿import { Languages } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/hooks/use-language";
 
@@ -13,7 +13,8 @@ export function LanguageToggle() {
       className="gap-2"
     >
       <Languages className="h-4 w-4" />
-      <span className="font-medium">{lang === "ar" ? "EN" : "ع"}</span>
+      <span className="font-medium">{lang === "ar" ? "EN" : "ط¹"}</span>
     </Button>
   );
 }
+

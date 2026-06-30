@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { Link } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "framer-motion";
 import {
@@ -22,20 +22,20 @@ const BADGE_META = {
   "best-seller": {
     Icon: Flame,
     en: "Best seller",
-    ar: "الأكثر مبيعاً",
+    ar: "ط§ظ„ط£ظƒط«ط± ظ…ط¨ظٹط¹ط§ظ‹",
     tone: "bg-conversion text-conversion-foreground",
   },
   trending: {
     Icon: TrendingUp,
     en: "Trending",
-    ar: "رائج",
+    ar: "ط±ط§ط¦ط¬",
     tone: "bg-brand text-brand-foreground",
   },
-  new: { Icon: Sparkles, en: "New", ar: "جديد", tone: "bg-foreground text-background" },
+  new: { Icon: Sparkles, en: "New", ar: "ط¬ط¯ظٹط¯", tone: "bg-foreground text-background" },
   limited: {
     Icon: Zap,
     en: "Limited",
-    ar: "محدود",
+    ar: "ظ…ط­ط¯ظˆط¯",
     tone: "bg-destructive text-destructive-foreground",
   },
 } as const;
@@ -152,7 +152,7 @@ export function ProductCard({ product, priority }: { product: Product; priority?
                   className="inline-flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full bg-background/95 text-xs font-semibold text-foreground shadow-soft backdrop-blur transition-colors hover:bg-background"
                 >
                   <Eye className="h-3.5 w-3.5" />
-                  {lang === "ar" ? "نظرة سريعة" : "Quick view"}
+                  {lang === "ar" ? "ظ†ط¸ط±ط© ط³ط±ظٹط¹ط©" : "Quick view"}
                 </button>
                 <button
                   ref={btnRef}
@@ -161,7 +161,7 @@ export function ProductCard({ product, priority }: { product: Product; priority?
                   className="inline-flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full bg-foreground text-xs font-semibold text-background shadow-soft transition-transform hover:scale-[1.02]"
                 >
                   <ShoppingBag className="h-3.5 w-3.5" />
-                  {lang === "ar" ? "أضف" : "Add"}
+                  {lang === "ar" ? "ط£ط¶ظپ" : "Add"}
                 </button>
               </div>
             </div>
@@ -197,13 +197,13 @@ export function ProductCard({ product, priority }: { product: Product; priority?
               {product.freeShipping && (
                 <span className="inline-flex items-center gap-1 rounded-md bg-brand-soft px-1.5 py-0.5 text-[10px] font-semibold text-brand">
                   <Truck className="h-3 w-3" />
-                  {lang === "ar" ? "شحن مجاني" : "Free shipping"}
+                  {lang === "ar" ? "ط´ط­ظ† ظ…ط¬ط§ظ†ظٹ" : "Free shipping"}
                 </span>
               )}
               {product.fastDelivery && (
                 <span className="inline-flex items-center gap-1 rounded-md bg-conversion/10 px-1.5 py-0.5 text-[10px] font-semibold text-conversion">
                   <Zap className="h-3 w-3" />
-                  {lang === "ar" ? "توصيل سريع" : "Fast delivery"}
+                  {lang === "ar" ? "طھظˆطµظٹظ„ ط³ط±ظٹط¹" : "Fast delivery"}
                 </span>
               )}
             </div>
@@ -217,3 +217,4 @@ export function ProductCard({ product, priority }: { product: Product; priority?
     </>
   );
 }
+

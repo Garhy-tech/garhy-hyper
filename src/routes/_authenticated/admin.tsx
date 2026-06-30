@@ -1,4 +1,4 @@
-import { createFileRoute, Outlet, redirect } from "@tanstack/react-router";
+﻿import { createFileRoute, Outlet, redirect } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { Logo } from "@/components/common/logo";
 import { LanguageToggle } from "@/components/common/language-toggle";
@@ -63,3 +63,4 @@ function AdminLayout() {
     </div>
   );
 }
+

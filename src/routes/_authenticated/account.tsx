@@ -1,4 +1,4 @@
-import { createFileRoute, Outlet } from "@tanstack/react-router";
+﻿import { createFileRoute, Outlet } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { AccountSidebar } from "@/components/layout/account-sidebar";
@@ -25,3 +25,4 @@ function AccountLayout() {
     </div>
   );
 }
+

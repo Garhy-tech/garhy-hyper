@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { Send, Sparkles } from "lucide-react";
 import { PageHeader } from "@/components/common/page-header";
 import { Button } from "@/components/ui/button";
@@ -7,7 +7,7 @@ import { Stagger, StaggerItem } from "@/components/motion";
 import { useLanguage } from "@/hooks/use-language";
 
 export const Route = createFileRoute("/_authenticated/admin/integrations")({
-  head: () => ({ meta: [{ title: "Integrations — GARHY | HYPER" }] }),
+  head: () => ({ meta: [{ title: "Integrations â€” GARHY | HYPER" }] }),
   component: IntegrationsPage,
 });
 
@@ -50,3 +50,4 @@ function IntegrationsPage() {
     </div>
   );
 }
+

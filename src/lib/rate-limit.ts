@@ -1,4 +1,4 @@
-import { createMiddleware } from "@tanstack/react-start";
+﻿import { createMiddleware } from "@tanstack/react-start";
 import { getRequest } from "@tanstack/react-start/server";
 
 import { logWarn } from "./observability";
@@ -6,7 +6,7 @@ import { logWarn } from "./observability";
 // In-memory fixed-window rate limiting, exposed as reusable TanStack Start
 // function middleware. State is per-process: this protects single-instance
 // deployments (e.g. Replit Reserved VM). A multi-instance / autoscale setup
-// would need a shared store (Redis) — intentionally out of scope for this phase.
+// would need a shared store (Redis) â€” intentionally out of scope for this phase.
 
 type WindowState = { count: number; resetAt: number };
 
@@ -68,3 +68,4 @@ export const authGuardRateLimit = createRateLimit({
   limit: 120,
   windowMs: 60_000,
 });
+

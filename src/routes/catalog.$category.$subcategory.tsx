@@ -1,11 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/common/page-header";
 import { EmptyState } from "@/components/common/empty-state";
 import { useLanguage } from "@/hooks/use-language";
 
 export const Route = createFileRoute("/catalog/$category/$subcategory")({
   head: ({ params }) => ({
-    meta: [{ title: `${params.subcategory} — GARHY | HYPER` }],
+    meta: [{ title: `${params.subcategory} â€” GARHY | HYPER` }],
   }),
   component: SubcategoryPage,
 });
@@ -20,3 +20,4 @@ function SubcategoryPage() {
     </div>
   );
 }
+

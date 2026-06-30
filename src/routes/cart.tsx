@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import { Minus, Plus, ShieldCheck, ShoppingBag, Tag, Trash2, Truck } from "lucide-react";
 import { useMemo, useState } from "react";
@@ -10,7 +10,7 @@ import { useCart, useCountry } from "@/contexts/commerce-context";
 import { useLanguage } from "@/hooks/use-language";
 
 export const Route = createFileRoute("/cart")({
-  head: () => ({ meta: [{ title: "Cart — GARHY | HYPER" }] }),
+  head: () => ({ meta: [{ title: "Cart â€” GARHY | HYPER" }] }),
   component: CartPage,
 });
 
@@ -34,17 +34,17 @@ function CartPage() {
       <main className="flex-1 bg-surface/40">
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <PageHeader
-            title={lang === "ar" ? "السلة" : "Shopping cart"}
-            description={`${count} ${lang === "ar" ? "منتج" : "items"}`}
+            title={lang === "ar" ? "ط§ظ„ط³ظ„ط©" : "Shopping cart"}
+            description={`${count} ${lang === "ar" ? "ظ…ظ†طھط¬" : "items"}`}
           />
 
           {lines.length === 0 ? (
             <EmptyState
               icon={<ShoppingBag className="h-6 w-6" />}
-              title={lang === "ar" ? "سلتك فارغة" : "Your cart is empty"}
+              title={lang === "ar" ? "ط³ظ„طھظƒ ظپط§ط±ط؛ط©" : "Your cart is empty"}
               description={
                 lang === "ar"
-                  ? "اكتشف الأقسام وأضف ما يعجبك"
+                  ? "ط§ظƒطھط´ظپ ط§ظ„ط£ظ‚ط³ط§ظ… ظˆط£ط¶ظپ ظ…ط§ ظٹط¹ط¬ط¨ظƒ"
                   : "Discover categories and add what you love"
               }
               action={
@@ -52,7 +52,7 @@ function CartPage() {
                   to="/catalog"
                   className="inline-flex h-11 items-center rounded-full bg-foreground px-6 text-sm font-semibold text-background transition-transform hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
-                  {lang === "ar" ? "تسوق الآن" : "Start shopping"}
+                  {lang === "ar" ? "طھط³ظˆظ‚ ط§ظ„ط¢ظ†" : "Start shopping"}
                 </Link>
               }
             />
@@ -152,7 +152,7 @@ function CartPage() {
               <aside className="lg:sticky lg:top-28 lg:self-start">
                 <div className="space-y-4 rounded-2xl border border-hairline bg-card p-5">
                   <h2 className="font-display text-lg font-bold">
-                    {lang === "ar" ? "ملخص الطلب" : "Order summary"}
+                    {lang === "ar" ? "ظ…ظ„ط®طµ ط§ظ„ط·ظ„ط¨" : "Order summary"}
                   </h2>
 
                   <div>
@@ -161,10 +161,10 @@ function CartPage() {
                         <Truck className="h-3 w-3" />
                         {remaining === 0
                           ? lang === "ar"
-                            ? "شحن مجاني مفعّل"
+                            ? "ط´ط­ظ† ظ…ط¬ط§ظ†ظٹ ظ…ظپط¹ظ‘ظ„"
                             : "Free shipping unlocked"
                           : lang === "ar"
-                            ? `اضف ${format(remaining)} للشحن المجاني`
+                            ? `ط§ط¶ظپ ${format(remaining)} ظ„ظ„ط´ط­ظ† ط§ظ„ظ…ط¬ط§ظ†ظٹ`
                             : `Add ${format(remaining)} for free shipping`}
                       </span>
                       <span className="font-bold text-foreground">{Math.round(progress)}%</span>
@@ -187,8 +187,8 @@ function CartPage() {
                       <input
                         value={coupon}
                         onChange={(e) => setCoupon(e.target.value)}
-                        placeholder={lang === "ar" ? "كود الخصم" : "Coupon code"}
-                        aria-label={lang === "ar" ? "كود الخصم" : "Coupon code"}
+                        placeholder={lang === "ar" ? "ظƒظˆط¯ ط§ظ„ط®طµظ…" : "Coupon code"}
+                        aria-label={lang === "ar" ? "ظƒظˆط¯ ط§ظ„ط®طµظ…" : "Coupon code"}
                         className="h-10 w-full rounded-full border border-hairline bg-background ps-9 pe-3 text-sm outline-none transition-colors focus-visible:border-brand focus-visible:ring-2 focus-visible:ring-ring/50"
                       />
                     </div>
@@ -201,41 +201,41 @@ function CartPage() {
                       }}
                       className="h-10 rounded-full bg-foreground px-4 text-xs font-bold text-background transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                     >
-                      {lang === "ar" ? "تطبيق" : "Apply"}
+                      {lang === "ar" ? "طھط·ط¨ظٹظ‚" : "Apply"}
                     </button>
                   </div>
                   {applied && applied.pct === 0 && (
                     <p className="text-[11px] font-semibold text-destructive">
-                      {lang === "ar" ? "كود غير صالح" : "Invalid code"}
+                      {lang === "ar" ? "ظƒظˆط¯ ط؛ظٹط± طµط§ظ„ط­" : "Invalid code"}
                     </p>
                   )}
 
                   <div className="space-y-1 text-sm">
                     <div className="flex justify-between text-muted-foreground">
-                      <span>{lang === "ar" ? "المجموع الفرعي" : "Subtotal"}</span>
+                      <span>{lang === "ar" ? "ط§ظ„ظ…ط¬ظ…ظˆط¹ ط§ظ„ظپط±ط¹ظٹ" : "Subtotal"}</span>
                       <span className="font-semibold text-foreground">{format(subtotal)}</span>
                     </div>
                     {discount > 0 && (
                       <div className="flex justify-between text-conversion">
-                        <span>{lang === "ar" ? "الخصم" : "Discount"}</span>
+                        <span>{lang === "ar" ? "ط§ظ„ط®طµظ…" : "Discount"}</span>
                         <span>-{format(discount)}</span>
                       </div>
                     )}
                     <div className="flex justify-between text-muted-foreground">
-                      <span>{lang === "ar" ? "الشحن" : "Shipping"}</span>
+                      <span>{lang === "ar" ? "ط§ظ„ط´ط­ظ†" : "Shipping"}</span>
                       <span>
                         {remaining === 0
                           ? lang === "ar"
-                            ? "مجاني"
+                            ? "ظ…ط¬ط§ظ†ظٹ"
                             : "Free"
                           : lang === "ar"
-                            ? "يُحسب عند الدفع"
+                            ? "ظٹظڈط­ط³ط¨ ط¹ظ†ط¯ ط§ظ„ط¯ظپط¹"
                             : "At checkout"}
                       </span>
                     </div>
                     <div className="mt-1 flex items-baseline justify-between border-t border-hairline pt-2">
                       <span className="font-display text-sm font-bold">
-                        {lang === "ar" ? "الإجمالي" : "Total"}
+                        {lang === "ar" ? "ط§ظ„ط¥ط¬ظ…ط§ظ„ظٹ" : "Total"}
                       </span>
                       <motion.span
                         key={total}
@@ -252,11 +252,11 @@ function CartPage() {
                     to="/checkout"
                     className="inline-flex h-12 w-full items-center justify-center rounded-full bg-foreground font-semibold text-background transition-transform hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                   >
-                    {lang === "ar" ? "إتمام الشراء" : "Proceed to checkout"}
+                    {lang === "ar" ? "ط¥طھظ…ط§ظ… ط§ظ„ط´ط±ط§ط،" : "Proceed to checkout"}
                   </Link>
                   <p className="flex items-center justify-center gap-1.5 text-[11px] text-muted-foreground">
                     <ShieldCheck className="h-3 w-3" />
-                    {lang === "ar" ? "دفع آمن ومحمي" : "Secure & encrypted checkout"}
+                    {lang === "ar" ? "ط¯ظپط¹ ط¢ظ…ظ† ظˆظ…ط­ظ…ظٹ" : "Secure & encrypted checkout"}
                   </p>
                 </div>
               </aside>
@@ -268,3 +268,4 @@ function CartPage() {
     </div>
   );
 }
+

@@ -1,48 +1,48 @@
-import { Mail, Headphones, Shield, LineChart, ShieldCheck, Settings } from "lucide-react";
+﻿import { Mail, Headphones, Shield, LineChart, ShieldCheck, Settings } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
 
 const CONTACTS = [
   {
     email: "owner@garhy.ai",
-    title: { ar: "الاستفسارات العامة", en: "General inquiries" },
+    title: { ar: "ط§ظ„ط§ط³طھظپط³ط§ط±ط§طھ ط§ظ„ط¹ط§ظ…ط©", en: "General inquiries" },
     desc: {
-      ar: "للأسئلة العامة وطلبات المعلومات",
+      ar: "ظ„ظ„ط£ط³ط¦ظ„ط© ط§ظ„ط¹ط§ظ…ط© ظˆط·ظ„ط¨ط§طھ ط§ظ„ظ…ط¹ظ„ظˆظ…ط§طھ",
       en: "For general questions and information requests",
     },
     icon: Mail,
   },
   {
     email: "owner@garhy.ai",
-    title: { ar: "قسم الأسواق", en: "Markets" },
+    title: { ar: "ظ‚ط³ظ… ط§ظ„ط£ط³ظˆط§ظ‚", en: "Markets" },
     desc: {
-      ar: "للشراكات التجارية وفرص السوق",
+      ar: "ظ„ظ„ط´ط±ط§ظƒط§طھ ط§ظ„طھط¬ط§ط±ظٹط© ظˆظپط±طµ ط§ظ„ط³ظˆظ‚",
       en: "For business partnerships and market opportunities",
     },
     icon: LineChart,
   },
   {
     email: "owner@garhy.ai",
-    title: { ar: "الدعم الفني", en: "Technical support" },
+    title: { ar: "ط§ظ„ط¯ط¹ظ… ط§ظ„ظپظ†ظٹ", en: "Technical support" },
     desc: {
-      ar: "مساعدة فنية للعملاء على مدار الساعة",
+      ar: "ظ…ط³ط§ط¹ط¯ط© ظپظ†ظٹط© ظ„ظ„ط¹ظ…ظ„ط§ط، ط¹ظ„ظ‰ ظ…ط¯ط§ط± ط§ظ„ط³ط§ط¹ط©",
       en: "Round-the-clock technical assistance for customers",
     },
     icon: Headphones,
   },
   {
     email: "founder@garhy.ai",
-    title: { ar: "الإدارة", en: "Management" },
+    title: { ar: "ط§ظ„ط¥ط¯ط§ط±ط©", en: "Management" },
     desc: {
-      ar: "للتواصل المباشر مع الإدارة التنفيذية",
+      ar: "ظ„ظ„طھظˆط§طµظ„ ط§ظ„ظ…ط¨ط§ط´ط± ظ…ط¹ ط§ظ„ط¥ط¯ط§ط±ط© ط§ظ„طھظ†ظپظٹط°ظٹط©",
       en: "A direct line to executive management",
     },
     icon: Settings,
   },
   {
     email: "owner@garhy.ai",
-    title: { ar: "الأمان والامتثال", en: "Security & compliance" },
+    title: { ar: "ط§ظ„ط£ظ…ط§ظ† ظˆط§ظ„ط§ظ…طھط«ط§ظ„", en: "Security & compliance" },
     desc: {
-      ar: "للإبلاغ عن مشكلات الأمان والخصوصية",
+      ar: "ظ„ظ„ط¥ط¨ظ„ط§ط؛ ط¹ظ† ظ…ط´ظƒظ„ط§طھ ط§ظ„ط£ظ…ط§ظ† ظˆط§ظ„ط®طµظˆطµظٹط©",
       en: "To report security and privacy issues",
     },
     icon: ShieldCheck,
@@ -57,14 +57,14 @@ export function ContactCenter() {
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-brand">
-            {ar ? "مركز التواصل" : "Contact center"}
+            {ar ? "ظ…ط±ظƒط² ط§ظ„طھظˆط§طµظ„" : "Contact center"}
           </p>
           <h2 className="font-display text-3xl font-bold sm:text-4xl">
-            {ar ? "تواصل مع الفريق المناسب" : "Reach the right team"}
+            {ar ? "طھظˆط§طµظ„ ظ…ط¹ ط§ظ„ظپط±ظٹظ‚ ط§ظ„ظ…ظ†ط§ط³ط¨" : "Reach the right team"}
           </h2>
           <p className="mt-4 text-base text-muted-foreground">
             {ar
-              ? "فرق متخصصة جاهزة لخدمتك على مدار الساعة. اختر القناة الأنسب لاستفسارك."
+              ? "ظپط±ظ‚ ظ…طھط®طµطµط© ط¬ط§ظ‡ط²ط© ظ„ط®ط¯ظ…طھظƒ ط¹ظ„ظ‰ ظ…ط¯ط§ط± ط§ظ„ط³ط§ط¹ط©. ط§ط®طھط± ط§ظ„ظ‚ظ†ط§ط© ط§ظ„ط£ظ†ط³ط¨ ظ„ط§ط³طھظپط³ط§ط±ظƒ."
               : "Dedicated teams ready around the clock. Pick the channel that best fits your inquiry."}
           </p>
         </div>
@@ -94,11 +94,11 @@ export function ContactCenter() {
               <Shield className="h-5 w-5" />
             </div>
             <h3 className="font-display text-lg font-bold">
-              {ar ? "دعم مؤسسي مخصص" : "Dedicated enterprise support"}
+              {ar ? "ط¯ط¹ظ… ظ…ط¤ط³ط³ظٹ ظ…ط®طµطµ" : "Dedicated enterprise support"}
             </h3>
             <p className="mt-1.5 text-sm text-muted-foreground">
               {ar
-                ? "فريق متخصص لإدارة حسابات الشركات والاحتياجات المؤسسية الكبيرة."
+                ? "ظپط±ظٹظ‚ ظ…طھط®طµطµ ظ„ط¥ط¯ط§ط±ط© ط­ط³ط§ط¨ط§طھ ط§ظ„ط´ط±ظƒط§طھ ظˆط§ظ„ط§ط­طھظٹط§ط¬ط§طھ ط§ظ„ظ…ط¤ط³ط³ظٹط© ط§ظ„ظƒط¨ظٹط±ط©."
                 : "A specialized team for corporate accounts and large enterprise needs."}
             </p>
             <a
@@ -114,3 +114,4 @@ export function ContactCenter() {
     </section>
   );
 }
+

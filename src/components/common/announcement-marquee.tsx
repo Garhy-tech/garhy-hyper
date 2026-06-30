@@ -1,4 +1,4 @@
-import { Sparkles, Truck, Tag, ShieldCheck, Globe2, Flame } from "lucide-react";
+﻿import { Sparkles, Truck, Tag, ShieldCheck, Globe2, Flame } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
 
 const ICONS = [Sparkles, Truck, Tag, ShieldCheck, Globe2, Flame];
@@ -42,3 +42,4 @@ export function AnnouncementMarquee() {
     </div>
   );
 }
+

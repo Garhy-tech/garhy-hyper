@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+﻿import { Link } from "@tanstack/react-router";
 import {
   LayoutDashboard,
   Package,
@@ -60,3 +60,4 @@ export function AdminSidebar() {
     </aside>
   );
 }
+

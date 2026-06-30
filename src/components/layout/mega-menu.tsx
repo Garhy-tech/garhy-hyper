@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -101,11 +101,11 @@ export function MegaMenu({ open, onClose }: { open: boolean; onClose: () => void
                     <LayoutGrid className="h-5 w-5" />
                   </span>
                   <p className="font-display text-sm font-bold">
-                    {lang === "ar" ? "لا توجد أقسام بعد" : "No categories yet"}
+                    {lang === "ar" ? "ظ„ط§ طھظˆط¬ط¯ ط£ظ‚ط³ط§ظ… ط¨ط¹ط¯" : "No categories yet"}
                   </p>
                   <p className="mt-1 max-w-xs text-[12px] text-muted-foreground">
                     {lang === "ar"
-                      ? "ستظهر الأقسام هنا بمجرد إضافتها."
+                      ? "ط³طھط¸ظ‡ط± ط§ظ„ط£ظ‚ط³ط§ظ… ظ‡ظ†ط§ ط¨ظ…ط¬ط±ط¯ ط¥ط¶ط§ظپطھظ‡ط§."
                       : "Categories will appear here once they are added."}
                   </p>
                 </div>
@@ -140,7 +140,7 @@ export function MegaMenu({ open, onClose }: { open: boolean; onClose: () => void
                             <div className="min-w-0">
                               <p className="font-display text-sm font-bold">{name}</p>
                               <p className="mt-0.5 truncate text-[11px] text-muted-foreground">
-                                {lang === "ar" ? "تسوق الآن" : "Shop now"}
+                                {lang === "ar" ? "طھط³ظˆظ‚ ط§ظ„ط¢ظ†" : "Shop now"}
                               </p>
                             </div>
                           </div>
@@ -163,11 +163,11 @@ export function MegaMenu({ open, onClose }: { open: boolean; onClose: () => void
                     GARHY | HYPER
                   </p>
                   <h3 className="mt-2 font-display text-xl font-extrabold leading-tight">
-                    {lang === "ar" ? "كل ما تحتاجه في مكان واحد" : "Everything in one place"}
+                    {lang === "ar" ? "ظƒظ„ ظ…ط§ طھط­طھط§ط¬ظ‡ ظپظٹ ظ…ظƒط§ظ† ظˆط§ط­ط¯" : "Everything in one place"}
                   </h3>
                   <p className="mt-2 text-sm opacity-90">
                     {lang === "ar"
-                      ? "تصفّح الكتالوج الكامل واكتشف منتجاتنا."
+                      ? "طھطµظپظ‘ط­ ط§ظ„ظƒطھط§ظ„ظˆط¬ ط§ظ„ظƒط§ظ…ظ„ ظˆط§ظƒطھط´ظپ ظ…ظ†طھط¬ط§طھظ†ط§."
                       : "Browse the full catalog and discover our products."}
                   </p>
                   <Link
@@ -175,7 +175,7 @@ export function MegaMenu({ open, onClose }: { open: boolean; onClose: () => void
                     onClick={onClose}
                     className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-bold text-brand"
                   >
-                    {lang === "ar" ? "تصفّح الكتالوج" : "Browse catalog"}
+                    {lang === "ar" ? "طھطµظپظ‘ط­ ط§ظ„ظƒطھط§ظ„ظˆط¬" : "Browse catalog"}
                   </Link>
                 </div>
               </motion.aside>
@@ -186,3 +186,4 @@ export function MegaMenu({ open, onClose }: { open: boolean; onClose: () => void
     </AnimatePresence>
   );
 }
+

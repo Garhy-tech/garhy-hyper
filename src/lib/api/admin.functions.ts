@@ -1,4 +1,4 @@
-import { createServerFn } from "@tanstack/react-start";
+﻿import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { requireAdmin } from "@/integrations/supabase/admin-guard";
 import {
@@ -257,3 +257,4 @@ export const deleteFlashDeal = createServerFn({ method: "POST" })
     await adminDelete("flash_deals", data.id);
     return { ok: true };
   });
+

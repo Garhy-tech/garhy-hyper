@@ -1,4 +1,4 @@
-import process from "node:process";
+﻿import process from "node:process";
 
 // Server-side response hardening. Applied from the request middleware
 // (src/start.ts) and the Nitro fetch boundary (src/server.ts) so every
@@ -72,3 +72,4 @@ export function applySecurityHeaders<T extends { headers: Headers }>(
   }
   return response;
 }
+

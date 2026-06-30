@@ -1,11 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { Check } from "lucide-react";
 import { PageHeader } from "@/components/common/page-header";
 import { FadeIn } from "@/components/motion";
 import { useLanguage } from "@/hooks/use-language";
 
 export const Route = createFileRoute("/_authenticated/account/orders/$id")({
-  head: ({ params }) => ({ meta: [{ title: `Order ${params.id} — GARHY | HYPER` }] }),
+  head: ({ params }) => ({ meta: [{ title: `Order ${params.id} â€” GARHY | HYPER` }] }),
   component: OrderTracking,
 });
 
@@ -38,7 +38,7 @@ function OrderTracking() {
                   </div>
                   <div className={isLast ? "" : "pb-6"}>
                     <p className="font-medium">{step}</p>
-                    <p className="text-xs text-muted-foreground">—</p>
+                    <p className="text-xs text-muted-foreground">â€”</p>
                   </div>
                 </li>
               );
@@ -49,3 +49,4 @@ function OrderTracking() {
     </div>
   );
 }
+

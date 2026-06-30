@@ -1,4 +1,4 @@
-import type { LucideIcon } from "lucide-react";
+﻿import type { LucideIcon } from "lucide-react";
 
 export function StatCard({
   label,
@@ -30,3 +30,4 @@ export function StatCard({
     </div>
   );
 }
+

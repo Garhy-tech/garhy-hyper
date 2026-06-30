@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import {
   Award,
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/product/$slug")({
   head: ({ params }) => ({
     meta: [
       {
-        title: `${params.slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())} — GARHY | HYPER`,
+        title: `${params.slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())} â€” GARHY | HYPER`,
       },
     ],
   }),
@@ -73,16 +73,16 @@ function ProductNotFound() {
         <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
           <EmptyState
             icon={<PackageX className="h-6 w-6" />}
-            title={lang === "ar" ? "المنتج غير موجود" : "Product not found"}
+            title={lang === "ar" ? "ط§ظ„ظ…ظ†طھط¬ ط؛ظٹط± ظ…ظˆط¬ظˆط¯" : "Product not found"}
             description={
               lang === "ar"
-                ? "هذا المنتج غير متوفر أو تمت إزالته. تصفّح الكتالوج لاكتشاف منتجات أخرى."
+                ? "ظ‡ط°ط§ ط§ظ„ظ…ظ†طھط¬ ط؛ظٹط± ظ…طھظˆظپط± ط£ظˆ طھظ…طھ ط¥ط²ط§ظ„طھظ‡. طھطµظپظ‘ط­ ط§ظ„ظƒطھط§ظ„ظˆط¬ ظ„ط§ظƒطھط´ط§ظپ ظ…ظ†طھط¬ط§طھ ط£ط®ط±ظ‰."
                 : "This product is unavailable or has been removed. Browse the catalog to discover other products."
             }
             action={
               <Link to="/catalog">
                 <Button size="lg" className="h-11 px-6">
-                  {lang === "ar" ? "تصفّح الكتالوج" : "Browse catalog"}
+                  {lang === "ar" ? "طھطµظپظ‘ط­ ط§ظ„ظƒطھط§ظ„ظˆط¬" : "Browse catalog"}
                 </Button>
               </Link>
             }
@@ -144,19 +144,19 @@ function ProductView({ product }: { product: CatalogProduct }) {
                         <Star className="h-3.5 w-3.5 fill-conversion text-conversion" />
                         <span className="font-bold text-foreground">{p.rating?.toFixed(1)}</span>
                         <span>
-                          ({p.reviews?.toLocaleString()} {lang === "ar" ? "تقييم" : "reviews"})
+                          ({p.reviews?.toLocaleString()} {lang === "ar" ? "طھظ‚ظٹظٹظ…" : "reviews"})
                         </span>
                       </span>
                     ) : (
                       <span className="inline-flex items-center gap-1">
                         <Star className="h-3.5 w-3.5" />
-                        {lang === "ar" ? "لا توجد تقييمات بعد" : "No reviews yet"}
+                        {lang === "ar" ? "ظ„ط§ طھظˆط¬ط¯ طھظ‚ظٹظٹظ…ط§طھ ط¨ط¹ط¯" : "No reviews yet"}
                       </span>
                     )}
                     {p.badge === "best-seller" && (
                       <span className="inline-flex items-center gap-1 text-conversion">
                         <Award className="h-3.5 w-3.5" />
-                        {lang === "ar" ? "الأكثر مبيعاً" : "Best seller"}
+                        {lang === "ar" ? "ط§ظ„ط£ظƒط«ط± ظ…ط¨ظٹط¹ط§ظ‹" : "Best seller"}
                       </span>
                     )}
                   </div>
@@ -214,7 +214,7 @@ function ProductView({ product }: { product: CatalogProduct }) {
                     className="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-full bg-foreground text-sm font-semibold text-background transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:text-base"
                   >
                     <ShoppingBag className="h-4 w-4" />
-                    {lang === "ar" ? "أضف إلى السلة" : "Add to cart"}
+                    {lang === "ar" ? "ط£ط¶ظپ ط¥ظ„ظ‰ ط§ظ„ط³ظ„ط©" : "Add to cart"}
                   </motion.button>
                   <button
                     type="button"
@@ -234,9 +234,9 @@ function ProductView({ product }: { product: CatalogProduct }) {
                 {/* Trust badges */}
                 <div className="grid grid-cols-3 gap-2 rounded-2xl border border-hairline bg-card p-3 text-center text-[11px]">
                   {[
-                    { Icon: Truck, t: lang === "ar" ? "شحن سريع" : "Fast shipping" },
-                    { Icon: RotateCcw, t: lang === "ar" ? "إرجاع ١٤ يوم" : "14-day returns" },
-                    { Icon: ShieldCheck, t: lang === "ar" ? "ضمان أصلي" : "Authentic" },
+                    { Icon: Truck, t: lang === "ar" ? "ط´ط­ظ† ط³ط±ظٹط¹" : "Fast shipping" },
+                    { Icon: RotateCcw, t: lang === "ar" ? "ط¥ط±ط¬ط§ط¹ ظ،ظ¤ ظٹظˆظ…" : "14-day returns" },
+                    { Icon: ShieldCheck, t: lang === "ar" ? "ط¶ظ…ط§ظ† ط£طµظ„ظٹ" : "Authentic" },
                   ].map(({ Icon, t }) => (
                     <div key={t} className="flex flex-col items-center gap-1.5 py-1">
                       <Icon className="h-4 w-4 text-brand" />
@@ -252,8 +252,8 @@ function ProductView({ product }: { product: CatalogProduct }) {
           <section className="mt-14">
             <div className="flex gap-1 border-b border-hairline">
               {[
-                { id: "desc" as const, label: lang === "ar" ? "الوصف" : "Description" },
-                { id: "reviews" as const, label: lang === "ar" ? "التقييمات" : "Reviews" },
+                { id: "desc" as const, label: lang === "ar" ? "ط§ظ„ظˆطµظپ" : "Description" },
+                { id: "reviews" as const, label: lang === "ar" ? "ط§ظ„طھظ‚ظٹظٹظ…ط§طھ" : "Reviews" },
               ].map((tItem) => (
                 <button
                   key={tItem.id}
@@ -282,7 +282,7 @@ function ProductView({ product }: { product: CatalogProduct }) {
                   {p.description
                     ? p.description
                     : lang === "ar"
-                      ? "لا يوجد وصف لهذا المنتج بعد."
+                      ? "ظ„ط§ ظٹظˆط¬ط¯ ظˆطµظپ ظ„ظ‡ط°ط§ ط§ظ„ظ…ظ†طھط¬ ط¨ط¹ط¯."
                       : "No description available yet."}
                 </p>
               )}
@@ -290,13 +290,13 @@ function ProductView({ product }: { product: CatalogProduct }) {
                 (hasReviews ? (
                   <p className="max-w-3xl">
                     {lang === "ar"
-                      ? `متوسط التقييم ${p.rating?.toFixed(1)} / 5 من ${p.reviews?.toLocaleString()} تقييم.`
+                      ? `ظ…طھظˆط³ط· ط§ظ„طھظ‚ظٹظٹظ… ${p.rating?.toFixed(1)} / 5 ظ…ظ† ${p.reviews?.toLocaleString()} طھظ‚ظٹظٹظ….`
                       : `Average rating ${p.rating?.toFixed(1)} / 5 from ${p.reviews?.toLocaleString()} reviews.`}
                   </p>
                 ) : (
                   <p className="max-w-3xl">
                     {lang === "ar"
-                      ? "لا توجد تقييمات لهذا المنتج بعد."
+                      ? "ظ„ط§ طھظˆط¬ط¯ طھظ‚ظٹظٹظ…ط§طھ ظ„ظ‡ط°ط§ ط§ظ„ظ…ظ†طھط¬ ط¨ط¹ط¯."
                       : "This product has no reviews yet."}
                   </p>
                 ))}
@@ -321,7 +321,7 @@ function ProductView({ product }: { product: CatalogProduct }) {
               className="inline-flex h-11 flex-1 items-center justify-center gap-2 rounded-full bg-foreground text-sm font-bold text-background transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             >
               <Zap className="h-4 w-4" />
-              {lang === "ar" ? "اشتري الآن" : "Buy now"}
+              {lang === "ar" ? "ط§ط´طھط±ظٹ ط§ظ„ط¢ظ†" : "Buy now"}
             </button>
           </div>
         </div>
@@ -330,3 +330,4 @@ function ProductView({ product }: { product: CatalogProduct }) {
     </div>
   );
 }
+

@@ -1,4 +1,4 @@
-import { ThemeProvider } from "next-themes";
+﻿import { ThemeProvider } from "next-themes";
 import { MotionConfig } from "framer-motion";
 import { useEffect, type ReactNode } from "react";
 import i18n from "@/lib/i18n";
@@ -49,3 +49,4 @@ export function AppProviders({ children }: { children: ReactNode }) {
     </ThemeProvider>
   );
 }
+

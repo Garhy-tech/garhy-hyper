@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { DollarSign, ShoppingCart, Users, AlertTriangle } from "lucide-react";
 import { PageHeader } from "@/components/common/page-header";
 import { StatCard } from "@/components/admin/stat-card";
@@ -7,7 +7,7 @@ import { FadeIn, Stagger, StaggerItem } from "@/components/motion";
 import { useLanguage } from "@/hooks/use-language";
 
 export const Route = createFileRoute("/_authenticated/admin/")({
-  head: () => ({ meta: [{ title: "Admin — GARHY | HYPER" }] }),
+  head: () => ({ meta: [{ title: "Admin â€” GARHY | HYPER" }] }),
   component: AdminDashboard,
 });
 
@@ -18,16 +18,16 @@ function AdminDashboard() {
       <PageHeader eyebrow={t("admin.title")} title={t("admin.dashboard")} />
       <Stagger className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <StaggerItem>
-          <StatCard label={t("admin.revenue")} value="—" icon={DollarSign} />
+          <StatCard label={t("admin.revenue")} value="â€”" icon={DollarSign} />
         </StaggerItem>
         <StaggerItem>
-          <StatCard label={t("admin.pendingOrders")} value="—" icon={ShoppingCart} />
+          <StatCard label={t("admin.pendingOrders")} value="â€”" icon={ShoppingCart} />
         </StaggerItem>
         <StaggerItem>
-          <StatCard label={t("admin.totalCustomers")} value="—" icon={Users} />
+          <StatCard label={t("admin.totalCustomers")} value="â€”" icon={Users} />
         </StaggerItem>
         <StaggerItem>
-          <StatCard label={t("admin.lowStock")} value="—" icon={AlertTriangle} />
+          <StatCard label={t("admin.lowStock")} value="â€”" icon={AlertTriangle} />
         </StaggerItem>
       </Stagger>
       <div className="mt-8 grid gap-6 lg:grid-cols-2">
@@ -49,3 +49,4 @@ function AdminDashboard() {
     </div>
   );
 }
+

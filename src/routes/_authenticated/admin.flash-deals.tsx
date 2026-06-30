@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Zap, Plus, Pencil, Trash2, Loader2 } from "lucide-react";
 import { PageHeader } from "@/components/common/page-header";
@@ -18,7 +18,7 @@ import {
 } from "@/lib/api/admin.functions";
 
 export const Route = createFileRoute("/_authenticated/admin/flash-deals")({
-  head: () => ({ meta: [{ title: "Admin — Flash deals — GARHY | HYPER" }] }),
+  head: () => ({ meta: [{ title: "Admin â€” Flash deals â€” GARHY | HYPER" }] }),
   loader: () => listAdminFlashDeals(),
   component: RouteComponent,
 });
@@ -253,3 +253,4 @@ function RouteComponent() {
     </div>
   );
 }
+

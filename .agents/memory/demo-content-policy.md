@@ -1,4 +1,4 @@
----
+﻿---
 name: Demo-content vs value-prop policy
 description: What counts as removable demo content vs legitimate store copy during production polish.
 ---
@@ -10,7 +10,7 @@ When polishing this storefront for production ("remove all demo content"):
 - **Remove**: fabricated catalog data (sample products, fake brands, fake
   reviews/ratings, fake prices/discounts, hardcoded coupon codes), lorem text, and
   any inaccurate statistic.
-- **Keep**: genuine store value propositions — e.g. "secure payments",
+- **Keep**: genuine store value propositions â€” e.g. "secure payments",
   "authentic products", "curated marketplace", free-shipping threshold. Stripping
   these makes the store look unfinished and was not what the user asked for.
 
@@ -25,3 +25,4 @@ number that didn't match the real country list (header/marquee said 12, the list
 
 **How to apply:** during polish, hide/guard sections that have no real data, keep
 value-prop copy, and verify every user-facing number against its source of truth.
+

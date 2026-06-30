@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { Link } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "framer-motion";
 import { Minus, Plus, ShieldCheck, ShoppingBag, Tag, Trash2, Truck, X } from "lucide-react";
@@ -64,14 +64,14 @@ export function CartDrawer() {
               "fixed top-0 z-[81] flex h-full w-full max-w-md flex-col glass-strong",
               side,
             )}
-            aria-label={lang === "ar" ? "السلة" : "Cart"}
+            aria-label={lang === "ar" ? "ط§ظ„ط³ظ„ط©" : "Cart"}
           >
             {/* Header */}
             <div className="flex items-center justify-between border-b border-hairline px-5 py-4">
               <div className="flex items-center gap-2">
                 <ShoppingBag className="h-4 w-4" />
                 <h2 className="font-display text-base font-extrabold">
-                  {lang === "ar" ? "السلة" : "Your cart"}
+                  {lang === "ar" ? "ط§ظ„ط³ظ„ط©" : "Your cart"}
                 </h2>
                 <span className="rounded-full bg-foreground px-2 py-0.5 text-[11px] font-bold text-background">
                   {count}
@@ -94,10 +94,10 @@ export function CartDrawer() {
                   <Truck className="h-3 w-3" />
                   {free
                     ? lang === "ar"
-                      ? "شحن مجاني مفعّل"
+                      ? "ط´ط­ظ† ظ…ط¬ط§ظ†ظٹ ظ…ظپط¹ظ‘ظ„"
                       : "Free shipping unlocked"
                     : lang === "ar"
-                      ? `اضف ${format(remaining)} للشحن المجاني`
+                      ? `ط§ط¶ظپ ${format(remaining)} ظ„ظ„ط´ط­ظ† ط§ظ„ظ…ط¬ط§ظ†ظٹ`
                       : `Add ${format(remaining)} for free shipping`}
                 </span>
                 <span className="font-bold text-foreground">{Math.round(progress)}%</span>
@@ -120,11 +120,11 @@ export function CartDrawer() {
                     <ShoppingBag className="h-6 w-6" />
                   </div>
                   <h3 className="font-display text-base font-bold">
-                    {lang === "ar" ? "سلتك فارغة" : "Your cart is empty"}
+                    {lang === "ar" ? "ط³ظ„طھظƒ ظپط§ط±ط؛ط©" : "Your cart is empty"}
                   </h3>
                   <p className="text-sm text-muted-foreground">
                     {lang === "ar"
-                      ? "اكتشف منتجاتنا وأضف ما يعجبك."
+                      ? "ط§ظƒطھط´ظپ ظ…ظ†طھط¬ط§طھظ†ط§ ظˆط£ط¶ظپ ظ…ط§ ظٹط¹ط¬ط¨ظƒ."
                       : "Discover products you love and add them here."}
                   </p>
                   <Link
@@ -132,7 +132,7 @@ export function CartDrawer() {
                     onClick={() => setOpen(false)}
                     className="mt-2 inline-flex h-10 items-center justify-center rounded-full bg-foreground px-5 text-sm font-semibold text-background"
                   >
-                    {lang === "ar" ? "تسوّق الآن" : "Start shopping"}
+                    {lang === "ar" ? "طھط³ظˆظ‘ظ‚ ط§ظ„ط¢ظ†" : "Start shopping"}
                   </Link>
                 </div>
               ) : (
@@ -230,7 +230,7 @@ export function CartDrawer() {
                     <input
                       value={coupon}
                       onChange={(e) => setCoupon(e.target.value)}
-                      placeholder={lang === "ar" ? "كود الخصم" : "Coupon code"}
+                      placeholder={lang === "ar" ? "ظƒظˆط¯ ط§ظ„ط®طµظ…" : "Coupon code"}
                       className="h-10 w-full rounded-full border border-hairline bg-background ps-9 pe-3 text-sm outline-none transition-colors focus:border-brand"
                     />
                   </div>
@@ -239,7 +239,7 @@ export function CartDrawer() {
                     onClick={applyCoupon}
                     className="h-10 rounded-full bg-foreground px-4 text-xs font-bold text-background"
                   >
-                    {lang === "ar" ? "تطبيق" : "Apply"}
+                    {lang === "ar" ? "طھط·ط¨ظٹظ‚" : "Apply"}
                   </button>
                 </div>
                 {applied && (
@@ -251,17 +251,17 @@ export function CartDrawer() {
                   >
                     {applied.pct > 0
                       ? lang === "ar"
-                        ? `تم تطبيق ${applied.code} (-${applied.pct}%)`
+                        ? `طھظ… طھط·ط¨ظٹظ‚ ${applied.code} (-${applied.pct}%)`
                         : `${applied.code} applied (-${applied.pct}%)`
                       : lang === "ar"
-                        ? "كود غير صالح"
+                        ? "ظƒظˆط¯ ط؛ظٹط± طµط§ظ„ط­"
                         : "Invalid code"}
                   </p>
                 )}
 
                 <div className="space-y-1 text-sm">
                   <div className="flex justify-between text-muted-foreground">
-                    <span>{lang === "ar" ? "المجموع الفرعي" : "Subtotal"}</span>
+                    <span>{lang === "ar" ? "ط§ظ„ظ…ط¬ظ…ظˆط¹ ط§ظ„ظپط±ط¹ظٹ" : "Subtotal"}</span>
                     <motion.span
                       key={subtotal}
                       initial={{ y: -3, opacity: 0 }}
@@ -273,25 +273,25 @@ export function CartDrawer() {
                   </div>
                   {discount > 0 && (
                     <div className="flex justify-between text-conversion">
-                      <span>{lang === "ar" ? "الخصم" : "Discount"}</span>
+                      <span>{lang === "ar" ? "ط§ظ„ط®طµظ…" : "Discount"}</span>
                       <span>-{format(discount)}</span>
                     </div>
                   )}
                   <div className="flex justify-between text-muted-foreground">
-                    <span>{lang === "ar" ? "الشحن" : "Shipping"}</span>
+                    <span>{lang === "ar" ? "ط§ظ„ط´ط­ظ†" : "Shipping"}</span>
                     <span>
                       {free
                         ? lang === "ar"
-                          ? "مجاني"
+                          ? "ظ…ط¬ط§ظ†ظٹ"
                           : "Free"
                         : lang === "ar"
-                          ? "يُحسب عند الدفع"
+                          ? "ظٹظڈط­ط³ط¨ ط¹ظ†ط¯ ط§ظ„ط¯ظپط¹"
                           : "At checkout"}
                     </span>
                   </div>
                   <div className="mt-1 flex items-baseline justify-between border-t border-hairline pt-2">
                     <span className="font-display text-sm font-bold">
-                      {lang === "ar" ? "الإجمالي" : "Total"}
+                      {lang === "ar" ? "ط§ظ„ط¥ط¬ظ…ط§ظ„ظٹ" : "Total"}
                     </span>
                     <motion.span
                       key={total}
@@ -309,14 +309,14 @@ export function CartDrawer() {
                   onClick={() => setOpen(false)}
                   className="inline-flex h-12 w-full items-center justify-center rounded-full bg-foreground font-semibold text-background transition-transform hover:scale-[1.01]"
                 >
-                  {lang === "ar" ? "إتمام الشراء" : "Checkout"}
+                  {lang === "ar" ? "ط¥طھظ…ط§ظ… ط§ظ„ط´ط±ط§ط،" : "Checkout"}
                 </Link>
 
                 <p className="flex items-center justify-center gap-1.5 text-[11px] text-muted-foreground">
                   <ShieldCheck className="h-3 w-3" />
                   {lang === "ar"
-                    ? `دفع آمن • شحن إلى ${country.nameAr}`
-                    : `Secure checkout • Shipping to ${country.name}`}
+                    ? `ط¯ظپط¹ ط¢ظ…ظ† â€¢ ط´ط­ظ† ط¥ظ„ظ‰ ${country.nameAr}`
+                    : `Secure checkout â€¢ Shipping to ${country.name}`}
                 </p>
               </div>
             )}
@@ -326,3 +326,4 @@ export function CartDrawer() {
     </AnimatePresence>
   );
 }
+

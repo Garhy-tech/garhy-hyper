@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { Bell } from "lucide-react";
 import { PageHeader } from "@/components/common/page-header";
 import { EmptyState } from "@/components/common/empty-state";
@@ -6,7 +6,7 @@ import { FadeIn } from "@/components/motion";
 import { useLanguage } from "@/hooks/use-language";
 
 export const Route = createFileRoute("/_authenticated/admin/notifications")({
-  head: () => ({ meta: [{ title: "Admin — GARHY | HYPER" }] }),
+  head: () => ({ meta: [{ title: "Admin â€” GARHY | HYPER" }] }),
   component: RouteComponent,
 });
 
@@ -25,3 +25,4 @@ function RouteComponent() {
     </div>
   );
 }
+

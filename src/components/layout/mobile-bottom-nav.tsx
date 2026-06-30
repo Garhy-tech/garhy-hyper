@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+﻿import { Link } from "@tanstack/react-router";
 import { Home, LayoutGrid, Tag, User, ShoppingBag } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
 
@@ -41,3 +41,4 @@ export function MobileBottomNav() {
     </nav>
   );
 }
+
