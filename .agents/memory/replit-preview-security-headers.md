@@ -26,3 +26,4 @@ boundary; verify the production set by running the built server with
 `SUPABASE_URL`) plus `https://*.supabase.co` and `wss://*.supabase.co`; product
 images come from arbitrary hosts so `img-src` needs `https:`.
 
+

@@ -26,3 +26,4 @@ export function consumeLastCapturedError(): unknown {
   return error;
 }
 
+

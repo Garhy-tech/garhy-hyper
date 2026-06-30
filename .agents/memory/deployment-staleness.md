@@ -38,3 +38,4 @@ section shells, not real demo products (those come from the now-empty DB).
 **Why this matters:** it prevents hunting for a non-existent hardcoded/demo data
 source in code when the real cause is deployment freshness.
 
+

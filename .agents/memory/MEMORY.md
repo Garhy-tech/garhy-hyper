@@ -6,3 +6,4 @@
 - [Premium design system](premium-design-system.md) â€” storefront already ships a mature glassmorphism system; deepen via tokens, don't rewrite; `Button asChild`+`Link`; ambient via `body::before`.
 - [Security-definer views = RLS bypass](supabase-security-definer-views.md) â€” owner-privileged public views must re-filter ALL publication/active/validity predicates themselves; gate child-table RLS via SECURITY DEFINER `is_public_*` helpers (no recursion).
 
+

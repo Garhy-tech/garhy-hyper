@@ -45,14 +45,14 @@ export function SiteFooter() {
               <Mail className="h-4 w-4 text-brand" /> owner@garhy.ai
             </a>
             <a
-              href="tel:+2201222339088"
+              href="tel:+22201222339088"
               className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
               dir="ltr"
             >
               <Phone className="h-4 w-4 text-brand" /> +968 76 454 193
             </a>
             <a
-              href="https://wa.me/2201222339088"
+              href="https://wa.me/22201222339088"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
@@ -127,4 +127,5 @@ function FooterLink({ to, children }: { to: string; children: React.ReactNode })
     </Link>
   );
 }
+
 

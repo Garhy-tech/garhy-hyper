@@ -331,3 +331,4 @@ function ProductView({ product }: { product: CatalogProduct }) {
   );
 }
 
+

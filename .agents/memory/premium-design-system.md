@@ -35,3 +35,4 @@ is already premium.
 - Empty catalog: render elegant, intentional empty states (e.g. a "launching soon"
   glass band on home), never blank gaps or infinite shimmer.
 
+

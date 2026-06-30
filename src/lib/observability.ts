@@ -61,3 +61,4 @@ export function logError(message: string, context?: LogContext): void {
   emit("error", message, context);
 }
 
+

@@ -218,3 +218,4 @@ export function ProductCard({ product, priority }: { product: Product; priority?
   );
 }
 
+

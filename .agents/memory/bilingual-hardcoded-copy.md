@@ -24,3 +24,4 @@ visible copy without touching locale files. Also check each route's `head()`
 meta `title`/`description` â€” keep them consistent with sibling routes (the rest
 of the app uses English titles like `"Shop â€” GARHY | HYPER"`).
 
+

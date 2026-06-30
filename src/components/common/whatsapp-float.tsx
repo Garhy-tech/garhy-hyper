@@ -1,6 +1,6 @@
 ﻿import { MessageCircle } from "lucide-react";
 
-const PHONE = "2201222339088";
+const PHONE = "22201222339088";
 const MESSAGE = "ظ…ط±ط­ط¨ظ‹ط§طŒ ط£ط±ط؛ط¨ ظپظٹ ط§ظ„ط§ط³طھظپط³ط§ط± ط¹ظ† ط§ظ„ظ…ظ†طھط¬ط§طھ ظˆط§ظ„ط®ط¯ظ…ط§طھ ط§ظ„ظ…طھط§ط­ط©.";
 
 export function WhatsAppFloat() {
@@ -21,4 +21,5 @@ export function WhatsAppFloat() {
     </a>
   );
 }
+
 

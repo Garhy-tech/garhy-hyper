@@ -113,3 +113,4 @@ export async function userHasAdminRole(userId: string): Promise<boolean> {
   return rows.length > 0;
 }
 
+

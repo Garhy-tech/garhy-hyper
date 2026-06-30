@@ -169,3 +169,4 @@ export function ProductGallery({ images, title }: { images: string[]; title: str
   );
 }
 
+

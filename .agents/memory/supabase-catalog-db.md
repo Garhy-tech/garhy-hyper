@@ -27,3 +27,4 @@ PostgREST (fetch). It is NOT in the Replit-provided Postgres.
 must be run by the project owner in the Supabase SQL Editor â€” the agent has no
 privileged DB credential to do it programmatically.
 
+

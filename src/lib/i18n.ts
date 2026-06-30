@@ -34,3 +34,4 @@ export default i18n;
 export const RTL_LANGS = ["ar"];
 export const isRTL = (lng: string) => RTL_LANGS.includes(lng);
 
+

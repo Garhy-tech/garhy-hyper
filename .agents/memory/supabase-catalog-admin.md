@@ -22,3 +22,4 @@ the catalog tables were intentionally/accidentally omitted, so REST writes fail.
 **How to apply:** for any catalog data operation (seed/wipe/migrate), use the psql
 superuser path, never REST. Never touch `user_roles`/auth tables during a catalog wipe.
 
+

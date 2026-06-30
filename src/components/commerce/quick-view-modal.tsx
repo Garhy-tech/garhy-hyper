@@ -151,3 +151,4 @@ export function QuickViewModal({ product, onClose }: { product: Product; onClose
   );
 }
 
+

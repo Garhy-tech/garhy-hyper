@@ -78,3 +78,4 @@ managed outside the app. When the schema is absent or empty, the data layer
 returns empty results and the UI shows localized empty states rather than
 failing â€” so the app boots cleanly against an unmigrated database.
 
+

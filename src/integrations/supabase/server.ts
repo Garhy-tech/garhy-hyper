@@ -64,3 +64,4 @@ export function createSupabaseServerClient(request: Request) {
   return { supabase, cookiesToSet: pendingCookies };
 }
 
+

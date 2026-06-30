@@ -39,3 +39,4 @@ no recursion, and the check is deterministic regardless of caller role. Always p
 `SET search_path = public` and `REVOKE ALL ... FROM PUBLIC` then `GRANT EXECUTE` to the
 specific roles, so the definer function can't be hijacked via search_path.
 
+

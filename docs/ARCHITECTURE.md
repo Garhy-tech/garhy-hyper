@@ -169,3 +169,4 @@ owner-privileged views (`security_invoker = false`):
 `variant_inventory`, so the curated projection is public while the raw commercial
 data stays locked down.
 
+

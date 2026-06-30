@@ -21,3 +21,4 @@ be running on the target port first. The `/product/smoke-test-product` case is
 expected to pass via the honest "product not found" path (200), not via a seeded
 fixture.
 
+

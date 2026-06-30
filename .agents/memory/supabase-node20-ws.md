@@ -38,3 +38,4 @@ createClient(url, key, {
 
 The runtime was bumped Node 20 â†’ 22 (`package.json` engines `node >=22.12.0`, `.replit` module `nodejs-22`) â€” TanStack Start deps require >=22.12.0. Node 22 ships a global `WebSocket`, so the shim path above is now **inert** (`wsTransport` resolves to `undefined`) and `createClient()` no longer throws. The shim is harmless and kept for back-compat; the `ws` decision above still stands.
 
+
